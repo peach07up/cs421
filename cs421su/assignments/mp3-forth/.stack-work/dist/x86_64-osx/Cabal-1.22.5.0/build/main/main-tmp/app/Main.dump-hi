@@ -1,0 +1,1146 @@
+
+==================== FINAL INTERFACE ====================
+2016-07-01 19:31:17.689705 UTC
+
+interface main@main:Main 7103
+  interface hash: 85a4ff93d594365e51da03721ddf525f
+  ABI hash: e4c911a86430745f484bba4410af827d
+  export-list hash: ef4df482b0feb1fd921f80aeaca17b3c
+  orphan hash: 8af481b55069271bcc4f87d3aba93975
+  flag hash: 8da3541ab65dc9760feed4fc7c2c9d28
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.dinsert
+  Main.dlookup
+  Main.eval
+  Main.initialCStack
+  Main.initialDictionary
+  Main.initialForthState
+  Main.initialIStack
+  Main.initialOutput
+  Main.liftCompOp
+  Main.liftIntOp
+  Main.main
+  Main.repl
+  Main.splitIf
+  Main.splitWellNested
+  Main.underflow
+  Main.CStack
+  Main.Dictionary
+  Main.Entry{Main.Def Main.Num Main.Prim Main.Unknown}
+  Main.ForthState
+  Main.IStack
+  Main.Output
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I integer-gmp-1.0.0.0
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw*
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I:Data.Hashable.Generic
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+                         unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw:Data.HashMap.Base
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  base-4.8.2.0:Text.Read ef0ef92fb7358ae94bab089940adfd2a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 371e90fe753f08ddedf0d2657a9ef5c4
+import  -/  unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw:Data.HashMap.Base e261c70f44a2a24aae3334c5288f8b06
+import  -/  unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw:Data.HashMap.Strict 61bad71aa00dbaea83c2ac21aa08a7d9
+97f455b2df7c6a6096a18f935fc48eed
+  $fShowEntry :: GHC.Show.Show Main.Entry
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Entry
+                  Main.$fShowEntry_$cshowsPrec
+                  Main.$fShowEntry_$cshow
+                  Main.$fShowEntry_$cshowList -}
+98c2cdea11721bccf394cab02f3092c7
+  $fShowEntry1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Prim"#) -}
+97f455b2df7c6a6096a18f935fc48eed
+  $fShowEntry_$cshow :: Main.Entry -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ ds :: Main.Entry ->
+                 case ds of wild {
+                   Main.Prim f -> Main.$fShowEntry1
+                   Main.Def s -> GHC.Show.$fShow[]_$s$cshow2 s
+                   Main.Num i -> GHC.Show.$fShowInteger_$cshow i
+                   Main.Unknown s
+                   -> GHC.CString.unpackAppendCString# "Unknown: "# s }) -}
+97f455b2df7c6a6096a18f935fc48eed
+  $fShowEntry_$cshowList :: [Main.Entry] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ ls :: [Main.Entry] s :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ Main.Entry
+                   (Main.$fShowEntry_$cshowsPrec GHC.Show.shows18)
+                   ls
+                   s) -}
+97f455b2df7c6a6096a18f935fc48eed
+  $fShowEntry_$cshowsPrec ::
+    GHC.Types.Int -> Main.Entry -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ w :: GHC.Types.Int w1 :: Main.Entry w2 :: GHC.Base.String ->
+                 Main.$w$cshowsPrec w1 w2) -}
+0ceb29e781cc9cef5f6690bad6afc604
+  $s$wupdateOrSnocWithKey ::
+    (GHC.Base.String -> v -> v -> v)
+    -> GHC.Base.String
+    -> v
+    -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Base.String v)
+    -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Base.String v)
+  {- Arity: 4, Strictness: <L,C(C1(C1(U)))><S,1*U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ v
+                   w1 :: GHC.Base.String -> v -> v -> v
+                   w2 :: GHC.Base.String
+                   w3 :: v
+                   ww :: GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Base.String v) ->
+                 letrec {
+                   $wgo :: GHC.Base.String
+                           -> v
+                           -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Base.String v)
+                           -> GHC.Prim.Int#
+                           -> GHC.Prim.Int#
+                           -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Base.String v)
+                     {- Arity: 5, Strictness: <S,1*U><L,U><S,U><L,U><L,U>,
+                        Inline: [0] -}
+                   = \ w :: GHC.Base.String
+                       w4 :: v
+                       ww1 :: GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Base.String v)
+                       ww2 :: GHC.Prim.Int#
+                       ww3 :: GHC.Prim.Int# ->
+                     case w of k2 { DEFAULT ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.>=# ww2 ww3) of wild {
+                       GHC.Types.False
+                       -> case GHC.Prim.indexArray#
+                                 @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                 ww1
+                                 ww2 of ds { (##) ipv3 ->
+                          case ipv3 of wild1 { Data.HashMap.Base.L kx y ->
+                          case GHC.Base.eqString k2 kx of wild2 {
+                            GHC.Types.False -> $wgo k2 w4 ww1 (GHC.Prim.+# ww2 1) ww3
+                            GHC.Types.True
+                            -> case GHC.Prim.thawArray#
+                                      @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                      @ GHC.Prim.RealWorld
+                                      ww1
+                                      0
+                                      (GHC.Prim.sizeofArray#
+                                         @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                         ww1)
+                                      GHC.Prim.realWorld# of ds1 { (#,#) ipv4 ipv5 ->
+                               case GHC.Prim.writeArray#
+                                      @ GHC.Prim.RealWorld
+                                      @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                      ipv5
+                                      ww2
+                                      (Data.HashMap.Base.L @ GHC.Base.String @ v k2 (w1 k2 w4 y))
+                                      ipv4 of s' { DEFAULT ->
+                               case GHC.Prim.unsafeFreezeArray#
+                                      @ GHC.Prim.RealWorld
+                                      @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                      ipv5
+                                      s' of ds2 { (#,#) ipv6 ipv7 ->
+                               ipv7 } } } } } }
+                       GHC.Types.True
+                       -> case GHC.Prim.newArray#
+                                 @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                 @ GHC.Prim.RealWorld
+                                 (GHC.Prim.+# ww3 1)
+                                 (Data.HashMap.Array.undefinedElem
+                                    @ (Data.HashMap.Base.Leaf GHC.Base.String v))
+                                 GHC.Prim.realWorld# of ds { (#,#) ipv3 ipv4 ->
+                          case GHC.Prim.copyArray#
+                                 @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                 @ GHC.Prim.RealWorld
+                                 ww1
+                                 0
+                                 ipv4
+                                 0
+                                 ww3
+                                 ipv3 of s2 { DEFAULT ->
+                          case GHC.Prim.writeArray#
+                                 @ GHC.Prim.RealWorld
+                                 @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                 ipv4
+                                 ww3
+                                 (Data.HashMap.Base.L @ GHC.Base.String @ v k2 w4)
+                                 s2 of s' { DEFAULT ->
+                          case GHC.Prim.unsafeFreezeArray#
+                                 @ GHC.Prim.RealWorld
+                                 @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                                 ipv4
+                                 s' of ds1 { (#,#) ipv5 ipv6 ->
+                          ipv6 } } } } } }
+                 } in
+                 $wgo
+                   w2
+                   w3
+                   ww
+                   0
+                   (GHC.Prim.sizeofArray#
+                      @ (Data.HashMap.Base.Leaf GHC.Base.String v)
+                      ww)) -}
+7c5530be5b8704d0a89efb1f8231937d
+  $sinsert ::
+    GHC.Base.String
+    -> v
+    -> Data.HashMap.Base.HashMap GHC.Base.String v
+    -> Data.HashMap.Base.HashMap GHC.Base.String v
+  {- Arity: 3, Strictness: <S,U><L,U><S,1*U>,
+     Unfolding: (\ @ v
+                   k0 :: GHC.Base.String
+                   v0 :: v
+                   m0 :: Data.HashMap.Base.HashMap GHC.Base.String v ->
+                 case Data.Hashable.Class.$wgo4
+                        k0
+                        (-2578643520546668380)
+                        0 of ww2 { (#,#) ww3 ww4 ->
+                 Main.$wpoly_go1
+                   @ v
+                   (GHC.Prim.int2Word#
+                      (GHC.Prim.xorI# (GHC.Prim.*# ww3 16777619) ww4))
+                   k0
+                   v0
+                   0
+                   m0 }) -}
+a77f9f60df55bdcb5018bd9e4324f3ed
+  $slookup ::
+    GHC.Base.String
+    -> Data.HashMap.Base.HashMap GHC.Base.String v -> GHC.Base.Maybe v
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,1*U>,
+     Unfolding: (\ @ v
+                   k0 :: GHC.Base.String
+                   m0 :: Data.HashMap.Base.HashMap GHC.Base.String v ->
+                 case Data.Hashable.Class.$wgo4
+                        k0
+                        (-2578643520546668380)
+                        0 of ww2 { (#,#) ww3 ww4 ->
+                 Main.$wpoly_go2
+                   @ v
+                   (GHC.Prim.int2Word#
+                      (GHC.Prim.xorI# (GHC.Prim.*# ww3 16777619) ww4))
+                   k0
+                   0
+                   m0 }) -}
+0f0ae95d4ce81d8f783f512a4ef277ea
+  $sunsafeInsert ::
+    GHC.Base.String
+    -> v
+    -> Data.HashMap.Base.HashMap GHC.Base.String v
+    -> Data.HashMap.Base.HashMap GHC.Base.String v
+  {- Arity: 3, Strictness: <S,U><L,U><S,1*U>,
+     Unfolding: (\ @ v
+                   k0 :: GHC.Base.String
+                   v0 :: v
+                   m0 :: Data.HashMap.Base.HashMap GHC.Base.String v ->
+                 case Data.Hashable.Class.$wgo4
+                        k0
+                        (-2578643520546668380)
+                        0 of ww2 { (#,#) ww3 ww4 ->
+                 case Main.$wa
+                        @ v
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.int2Word#
+                           (GHC.Prim.xorI# (GHC.Prim.*# ww3 16777619) ww4))
+                        k0
+                        v0
+                        0
+                        m0
+                        GHC.Prim.realWorld# of ds { (#,#) ipv ipv1 ->
+                 ipv1 } }) -}
+97f455b2df7c6a6096a18f935fc48eed
+  $w$cshowsPrec :: Main.Entry -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ w :: Main.Entry w1 :: GHC.Base.String ->
+                 case w of wild {
+                   Main.Prim f -> GHC.Base.++ @ GHC.Types.Char Main.$fShowEntry1 w1
+                   Main.Def s
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.Show.showList__
+                           @ [GHC.Types.Char]
+                           GHC.Show.shows_$cshowList
+                           s
+                           (GHC.Types.[] @ GHC.Types.Char))
+                        w1
+                   Main.Num i
+                   -> case GHC.Show.$w$cshowsPrec1
+                             0
+                             i
+                             (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                      GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.Types.: @ GHC.Types.Char ww3 ww4)
+                        w1 }
+                   Main.Unknown s
+                   -> GHC.CString.unpackAppendCString#
+                        "Unknown: "#
+                        (GHC.Base.++ @ GHC.Types.Char s w1) }) -}
+cb94cc910e68b80b322b028930aa46d5
+  $w$ssplitWellNested ::
+    [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> [[GHC.Types.Char]]
+    -> (# [[GHC.Types.Char]], [[GHC.Types.Char]] #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>, Inline: [0],
+     Unfolding: (\ ww :: [GHC.Types.Char]
+                   ww1 :: [GHC.Types.Char]
+                   w :: [[GHC.Types.Char]] ->
+                 letrec {
+                   $wsplitWN :: GHC.Integer.Type.Integer
+                                -> [[GHC.Types.Char]]
+                                -> [[GHC.Types.Char]]
+                                -> (# [[GHC.Types.Char]], [[GHC.Types.Char]] #)
+                     {- Arity: 3, Strictness: <S,U><L,U><S,U>, Inline: [0] -}
+                   = \ w1 :: GHC.Integer.Type.Integer
+                       w2 :: [[GHC.Types.Char]]
+                       w3 :: [[GHC.Types.Char]] ->
+                     case GHC.Integer.Type.eqInteger#
+                            w1
+                            Main.initialDictionary5 of wild { DEFAULT ->
+                     let {
+                       $wfail :: GHC.Prim.Void#
+                                 -> (# [[GHC.Types.Char]], [[GHC.Types.Char]] #)
+                         {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                       = \ void :: GHC.Prim.Void#[OneShot] ->
+                         case w3 of wild1 {
+                           []
+                           -> (# GHC.List.reverse @ [GHC.Types.Char] w2,
+                                 GHC.Types.[] @ [GHC.Types.Char] #)
+                           : word rest
+                           -> case GHC.Base.eqString word ww of wild2 {
+                                GHC.Types.False
+                                -> case GHC.Base.eqString word ww1 of wild3 {
+                                     GHC.Types.False
+                                     -> $wsplitWN w1 (GHC.Types.: @ [GHC.Types.Char] word w2) rest
+                                     GHC.Types.True
+                                     -> $wsplitWN
+                                          (GHC.Integer.Type.minusInteger w1 Main.splitIf3)
+                                          (GHC.Types.: @ [GHC.Types.Char] word w2)
+                                          rest }
+                                GHC.Types.True
+                                -> $wsplitWN
+                                     (GHC.Integer.Type.plusInteger w1 Main.splitIf3)
+                                     (GHC.Types.: @ [GHC.Types.Char] word w2)
+                                     rest } }
+                     } in
+                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                       GHC.Types.False -> $wfail GHC.Prim.void#
+                       GHC.Types.True
+                       -> case w3 of wild2 {
+                            [] -> $wfail GHC.Prim.void#
+                            : word rest
+                            -> case GHC.Base.eqString word ww1 of wild3 {
+                                 GHC.Types.False -> $wfail GHC.Prim.void#
+                                 GHC.Types.True
+                                 -> (# GHC.List.reverse @ [GHC.Types.Char] w2, rest #) } } } }
+                 } in
+                 $wsplitWN
+                   Main.initialDictionary5
+                   (GHC.Types.[] @ [GHC.Types.Char])
+                   w) -}
+cf3ca87cf2d653dc91e3374dedebb6d0
+  $wa ::
+    GHC.Prim.Word#
+    -> GHC.Base.String
+    -> v
+    -> GHC.Prim.Int#
+    -> Data.HashMap.Base.HashMap GHC.Base.String v
+    -> GHC.Prim.State# s
+    -> (# GHC.Prim.State# s,
+          Data.HashMap.Base.HashMap GHC.Base.String v #)
+  {- Arity: 6, Strictness: <L,U><S,1*U><L,U><L,U><S,1*U><L,U>,
+     Inline: [0] -}
+4d73648ac0f1caa4cd3c02c2ffb4e48a
+  $weval ::
+    [GHC.Base.String]
+    -> Main.IStack
+    -> Main.CStack
+    -> Main.Dictionary
+    -> Main.Output
+    -> (# Main.IStack, Main.CStack, Main.Dictionary, Main.Output #)
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+6af9a6e176f0535aacd224cea47af55a
+  $wpoly_go ::
+    GHC.Base.String
+    -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Base.String v)
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Base.Maybe v
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,1*U><S,U><L,U><L,U>,
+     Inline: [0] -}
+8f038e70bc8e1c94059af0d5afe6843c
+  $wpoly_go1 ::
+    GHC.Prim.Word#
+    -> GHC.Base.String
+    -> v
+    -> GHC.Prim.Int#
+    -> Data.HashMap.Base.HashMap GHC.Base.String v
+    -> Data.HashMap.Base.HashMap GHC.Base.String v
+  {- Arity: 5, Strictness: <L,U><S,1*U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+673e213b481d4c428d51305e14692cea
+  $wpoly_go2 ::
+    GHC.Prim.Word#
+    -> GHC.Base.String
+    -> GHC.Prim.Int#
+    -> Data.HashMap.Base.HashMap GHC.Base.String v
+    -> GHC.Base.Maybe v
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><S,1*U><L,U><S,1*U>,
+     Inline: [0] -}
+d146fbf8c6a151ba810aee02c2e8edfd
+  $wsplitIf ::
+    [GHC.Base.String]
+    -> (# [GHC.Base.String], [GHC.Base.String], [GHC.Base.String] #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ w :: [GHC.Base.String] ->
+                 let {
+                   ds :: ([[GHC.Types.Char]], [[GHC.Types.Char]])
+                   = case Main.$w$ssplitWellNested
+                            Main.splitIf2
+                            Main.splitIf1
+                            w of ww { (#,#) ww1 ww2 ->
+                     (ww1, ww2) }
+                 } in
+                 let {
+                   ds1 :: ([[GHC.Types.Char]], [[GHC.Types.Char]])
+                   = case ds of wild { (,) ifThen rest ->
+                     case Main.$wsplitIfElse
+                            Main.initialDictionary5
+                            (GHC.Types.[] @ [GHC.Types.Char])
+                            ifThen of ww { (#,#) ww1 ww2 ->
+                     (ww1, ww2) } }
+                 } in
+                 (# case ds1 of wild { (,) ifBlock elseBlock -> ifBlock },
+                    case ds1 of wild { (,) ifBlock elseBlock -> elseBlock },
+                    case ds of wild { (,) ifThen rest -> rest } #)) -}
+9cd56efaff42b3c756c1f2f4ecc26c37
+  $wsplitIfElse ::
+    GHC.Integer.Type.Integer
+    -> [[GHC.Types.Char]]
+    -> [[GHC.Types.Char]]
+    -> (# [[GHC.Types.Char]], [[GHC.Types.Char]] #)
+  {- Arity: 3, Strictness: <S,U><L,U><S,U>, Inline: [0] -}
+fc11849ae9f4cef6a568ad4820ed6e00
+  $wsplitWellNested ::
+    GHC.Classes.Eq a => a -> a -> [a] -> (# [a], [a] #)
+  {- Arity: 4, Strictness: <L,U(C(C1(U)),A)><L,U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a1
+                   w :: GHC.Classes.Eq a1
+                   ww :: a1
+                   ww1 :: a1
+                   w1 :: [a1] ->
+                 letrec {
+                   $wsplitWN :: GHC.Integer.Type.Integer
+                                -> [a1] -> [a1] -> (# [a1], [a1] #)
+                     {- Arity: 3, Strictness: <S,U><L,U><S,U>, Inline: [0] -}
+                   = \ w2 :: GHC.Integer.Type.Integer w3 :: [a1] w4 :: [a1] ->
+                     case GHC.Integer.Type.eqInteger#
+                            w2
+                            Main.initialDictionary5 of wild { DEFAULT ->
+                     let {
+                       $wfail :: GHC.Prim.Void# -> (# [a1], [a1] #)
+                         {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                       = \ void :: GHC.Prim.Void#[OneShot] ->
+                         case w4 of wild1 {
+                           [] -> (# GHC.List.reverse @ a1 w3, GHC.Types.[] @ a1 #)
+                           : word rest
+                           -> case GHC.Classes.== @ a1 w word ww of wild2 {
+                                GHC.Types.False
+                                -> case GHC.Classes.== @ a1 w word ww1 of wild3 {
+                                     GHC.Types.False -> $wsplitWN w2 (GHC.Types.: @ a1 word w3) rest
+                                     GHC.Types.True
+                                     -> $wsplitWN
+                                          (GHC.Integer.Type.minusInteger w2 Main.splitIf3)
+                                          (GHC.Types.: @ a1 word w3)
+                                          rest }
+                                GHC.Types.True
+                                -> $wsplitWN
+                                     (GHC.Integer.Type.plusInteger w2 Main.splitIf3)
+                                     (GHC.Types.: @ a1 word w3)
+                                     rest } }
+                     } in
+                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                       GHC.Types.False -> $wfail GHC.Prim.void#
+                       GHC.Types.True
+                       -> case w4 of wild2 {
+                            [] -> $wfail GHC.Prim.void#
+                            : word rest
+                            -> case GHC.Classes.== @ a1 w word ww1 of wild3 {
+                                 GHC.Types.False -> $wfail GHC.Prim.void#
+                                 GHC.Types.True -> (# GHC.List.reverse @ a1 w3, rest #) } } } }
+                 } in
+                 $wsplitWN Main.initialDictionary5 (GHC.Types.[] @ a1) w1) -}
+0285e5a48c8295585c18c21a78031191
+  type CStack = [[GHC.Base.String]]
+fe4c26c18464b52ee0a9e86216b4eb90
+  type Dictionary =
+    Data.HashMap.Base.HashMap GHC.Base.String [Main.Entry]
+97f455b2df7c6a6096a18f935fc48eed
+  data Entry
+    = Prim (Main.IStack -> Main.IStack)
+    | Def [GHC.Base.String]
+    | Num GHC.Integer.Type.Integer
+    | Unknown GHC.Base.String
+1b1773af797d1312414f9109ebe7fde6
+  type ForthState =
+    (Main.IStack, Main.CStack, Main.Dictionary, Main.Output)
+0cce8dea9eca198d969332994c560328
+  type IStack = [GHC.Integer.Type.Integer]
+1d9a73efc34e70915d22255773d48194
+  type Output = [GHC.Base.String]
+e2c73bf3e7b06b12e636bed451f52288
+  dinsert ::
+    GHC.Base.String -> Main.Entry -> Main.Dictionary -> Main.Dictionary
+  {- Arity: 3, Strictness: <S,U><L,U><S,U>,
+     Unfolding: (\ key :: GHC.Base.String
+                   val :: Main.Entry
+                   dict :: Main.Dictionary ->
+                 case Main.$slookup @ [Main.Entry] key dict of wild {
+                   GHC.Base.Nothing
+                   -> Main.$sinsert
+                        @ [Main.Entry]
+                        key
+                        (GHC.Types.: @ Main.Entry val (GHC.Types.[] @ Main.Entry))
+                        dict
+                   GHC.Base.Just vals
+                   -> Main.$sinsert
+                        @ [Main.Entry]
+                        key
+                        (GHC.Types.: @ Main.Entry val vals)
+                        dict }) -}
+ed50a0c0bfc301761ba90fc286eb263a
+  dlookup :: GHC.Base.String -> Main.Dictionary -> Main.Entry
+  {- Arity: 2, Strictness: <S,U><S,1*U>,
+     Unfolding: (\ word :: GHC.Base.String dict :: Main.Dictionary ->
+                 let {
+                   fail :: GHC.Prim.Void# -> Main.Entry
+                     {- Arity: 1, Strictness: <L,A> -}
+                   = \ ds :: GHC.Prim.Void#[OneShot] ->
+                     case Text.ParserCombinators.ReadP.run
+                            @ GHC.Integer.Type.Integer
+                            Main.dlookup1
+                            word of wild {
+                       [] -> Main.Unknown word
+                       : ds1 ds2
+                       -> case ds1 of wild1 { (,) i ds3 ->
+                          case ds3 of wild2 {
+                            []
+                            -> case ds2 of wild3 {
+                                 [] -> Main.Num i : ipv ipv1 -> Main.Unknown word }
+                            : ipv ipv1 -> Main.Unknown word } } }
+                 } in
+                 case Main.$slookup @ [Main.Entry] word dict of wild {
+                   GHC.Base.Nothing -> fail GHC.Prim.void#
+                   GHC.Base.Just ds
+                   -> case ds of wild1 {
+                        [] -> fail GHC.Prim.void# : x ds1 -> x } }) -}
+c5bd989a2e9eb12b1d7160dbcc326b4f
+  dlookup1 :: Text.ParserCombinators.ReadP.P GHC.Integer.Type.Integer
+  {- Unfolding: ((GHC.Read.$fReadInteger3
+                    GHC.Read.$fReadInteger_$sconvertInt
+                    Text.ParserCombinators.ReadPrec.minPrec)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                      <GHC.Integer.Type.Integer>_R)
+                   @ GHC.Integer.Type.Integer
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
+                      @ GHC.Integer.Type.Integer)) -}
+4e1d7af8c5da0da3804c0f5b4b64d455
+  eval :: [GHC.Base.String] -> Main.ForthState -> Main.ForthState
+  {- Arity: 2, Strictness: <S,1*U><S,1*U(U,U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: [GHC.Base.String] w1 :: Main.ForthState ->
+                 case w1 of ww { (,,,) ww1 ww2 ww3 ww4 ->
+                 case Main.$weval
+                        w
+                        ww1
+                        ww2
+                        ww3
+                        ww4 of ww5 { (#,,,#) ww6 ww7 ww8 ww9 ->
+                 (ww6, ww7, ww8, ww9) } }) -}
+9177eeaae9b9220c8d81d0d35d354b12
+  initialCStack :: Main.CStack
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ [GHC.Base.String]) -}
+d5e18627b7b776b6471804d2f7141809
+  initialDictionary :: Main.Dictionary
+  {- Unfolding: (case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary41
+                        Main.initialDictionary38
+                        (Data.HashMap.Base.Empty
+                           @ GHC.Base.String
+                           @ [Main.Entry]) of z { DEFAULT ->
+                 case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary37
+                        Main.initialDictionary34
+                        z of z1 { DEFAULT ->
+                 case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary33
+                        Main.initialDictionary30
+                        z1 of z2 { DEFAULT ->
+                 case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary29
+                        Main.initialDictionary26
+                        z2 of z3 { DEFAULT ->
+                 case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary25
+                        Main.initialDictionary22
+                        z3 of z4 { DEFAULT ->
+                 case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary21
+                        Main.initialDictionary18
+                        z4 of z5 { DEFAULT ->
+                 case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary17
+                        Main.initialDictionary14
+                        z5 of z6 { DEFAULT ->
+                 case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary13
+                        Main.initialDictionary10
+                        z6 of z7 { DEFAULT ->
+                 case Main.$sunsafeInsert
+                        @ [Main.Entry]
+                        Main.initialDictionary9
+                        Main.initialDictionary6
+                        z7 of z8 { DEFAULT ->
+                 Main.$sunsafeInsert
+                   @ [Main.Entry]
+                   Main.initialDictionary13
+                   Main.initialDictionary1
+                   z8 } } } } } } } } }) -}
+382302f34ccb19c834a9fdb9366c2808
+  initialDictionary1 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary2
+                   (GHC.Types.[] @ Main.Entry)) -}
+2acb6d39e07a1179834cecfc4bab40d2
+  initialDictionary10 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary11
+                   (GHC.Types.[] @ Main.Entry)) -}
+6df4a903a487171bef94baf50c8a4bca
+  initialDictionary11 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary12) -}
+f9fe92a1a93981bc8cddd6bbfa73d754
+  initialDictionary12 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> case GHC.Integer.Type.geInteger# y x of wild2 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary5
+                                  xs
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary4
+                                  xs } } } }) -}
+b69e5179c004ac519b9a03833f846880
+  initialDictionary13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ">="#) -}
+528c24c5bbc0509fb7d61cd45098e30d
+  initialDictionary14 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary15
+                   (GHC.Types.[] @ Main.Entry)) -}
+432954f86ab36d9ad2718e0bf213c37a
+  initialDictionary15 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary16) -}
+0faa31cda4b4f4ab2e7e3cbe24889133
+  initialDictionary16 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> case GHC.Integer.Type.leInteger# y x of wild2 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary5
+                                  xs
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary4
+                                  xs } } } }) -}
+22f5776b64fd7bd615f9b6bea2751ea2
+  initialDictionary17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<="#) -}
+05a7087b417d5c082f5754827b201dbe
+  initialDictionary18 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary19
+                   (GHC.Types.[] @ Main.Entry)) -}
+e90be83f9438c20c8a7af1a98e003cf4
+  initialDictionary19 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary20) -}
+24b8cbfc239339cecccd1442cc5b6eb6
+  initialDictionary2 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary3) -}
+bad00c963fd4c322d668ceb76a073eae
+  initialDictionary20 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> case GHC.Integer.Type.gtInteger# y x of wild2 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary5
+                                  xs
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary4
+                                  xs } } } }) -}
+f8bafff6207908548783835cf74af349
+  initialDictionary21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ">"#) -}
+d55f992028435065bd20b1c2c4c191c7
+  initialDictionary22 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary23
+                   (GHC.Types.[] @ Main.Entry)) -}
+3efdbffcd6d3a968fc2cbaded34b9d90
+  initialDictionary23 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary24) -}
+8393e6ea244405a17fb8d28ab710dea3
+  initialDictionary24 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> case GHC.Integer.Type.ltInteger# y x of wild2 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary5
+                                  xs
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary4
+                                  xs } } } }) -}
+6082e20edad8f6344a8b2b85065341b2
+  initialDictionary25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<"#) -}
+3b29e073b9f8de7560857916c99c252f
+  initialDictionary26 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary27
+                   (GHC.Types.[] @ Main.Entry)) -}
+fb47be59a92619ef5c203cdfb897e93b
+  initialDictionary27 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary28) -}
+6f04236b969534c91875ae6c1c258dbc
+  initialDictionary28 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> GHC.Types.:
+                             @ GHC.Integer.Type.Integer
+                             (GHC.Real.$fIntegralInteger_$cdiv y x)
+                             xs } }) -}
+438af19fe3c10874b5ff16513e4faf11
+  initialDictionary29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "/"#) -}
+74f5eddfa9ceed15e7944cfb3eca915a
+  initialDictionary3 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> case GHC.Integer.Type.neqInteger# y x of wild2 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary5
+                                  xs
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary4
+                                  xs } } } }) -}
+a562368ed9964d90fb67c607cb5887ac
+  initialDictionary30 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary31
+                   (GHC.Types.[] @ Main.Entry)) -}
+628286135f632a0d4ed3a0bb6928fffd
+  initialDictionary31 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary32) -}
+bba324343a1724e33b67b1f192d1ba7c
+  initialDictionary32 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> GHC.Types.:
+                             @ GHC.Integer.Type.Integer
+                             (GHC.Integer.Type.timesInteger y x)
+                             xs } }) -}
+643fd4f7dc76ffc9f99ed613b7e54114
+  initialDictionary33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "*"#) -}
+dae7e0b818e7d983483b296387f88b47
+  initialDictionary34 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary35
+                   (GHC.Types.[] @ Main.Entry)) -}
+2cf6154fcd175c8230394cc67b443662
+  initialDictionary35 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary36) -}
+18b9cd245b67a7f114c9f338a1f89510
+  initialDictionary36 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> GHC.Types.:
+                             @ GHC.Integer.Type.Integer
+                             (GHC.Integer.Type.minusInteger y x)
+                             xs } }) -}
+6e7cca669affb78ef118f7e9696807bb
+  initialDictionary37 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-"#) -}
+0f0daf05b25b2dc2cf07ec061bec0af8
+  initialDictionary38 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary39
+                   (GHC.Types.[] @ Main.Entry)) -}
+f7e6e78f40333975369e308ab1df3f58
+  initialDictionary39 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary40) -}
+70b2ec5f997c3b6d347d2683f89be955
+  initialDictionary4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer -1) -}
+d0f00d92ef4ea71c1205f2bebff9a352
+  initialDictionary40 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> GHC.Types.:
+                             @ GHC.Integer.Type.Integer
+                             (GHC.Integer.Type.plusInteger y x)
+                             xs } }) -}
+ed7c93b6f77d5b028f9d876202b421b3
+  initialDictionary41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+"#) -}
+4d17965731469c284d906cfaab592685
+  initialDictionary5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+1c4547669ab52bec068b533737573dbf
+  initialDictionary6 :: [Main.Entry]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Entry
+                   Main.initialDictionary7
+                   (GHC.Types.[] @ Main.Entry)) -}
+0c57c76579b2403bbfbfe69d4f43f530
+  initialDictionary7 :: Main.Entry
+  {- Unfolding: (Main.Prim Main.initialDictionary8) -}
+f7b673d8607af6f321993e4dd1ababd6
+  initialDictionary8 :: [GHC.Integer.Type.Integer] -> Main.IStack
+  {- Arity: 1,
+     Unfolding: (\ ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> case GHC.Integer.Type.eqInteger# y x of wild2 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary5
+                                  xs
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary4
+                                  xs } } } }) -}
+61a3727735d4d3fb77392740cb8ffe98
+  initialDictionary9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "=="#) -}
+90b653335cf1ad401d22ab8eb7141199
+  initialForthState :: Main.ForthState
+  {- Strictness: m,
+     Unfolding: ((GHC.Types.[] @ GHC.Integer.Type.Integer,
+                  GHC.Types.[] @ [GHC.Base.String],
+                  Main.initialDictionary,
+                  GHC.Types.[] @ GHC.Base.String)) -}
+97360477e5f6ff13f4a67a7d0a000c0b
+  initialIStack :: Main.IStack
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ GHC.Integer.Type.Integer) -}
+5ca32beacb203d4ec735da9d80ad828f
+  initialOutput :: [GHC.Base.String]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ GHC.Base.String) -}
+f59071920cfee09a82d40bd99a481abe
+  liftCompOp ::
+    (GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+    -> Main.IStack -> Main.IStack
+  {- Arity: 2, Strictness: <C(C(S)),1*C1(C1(U))><S,1*U>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Integer.Type.Integer
+                        -> GHC.Integer.Type.Integer -> GHC.Types.Bool
+                   w1 :: Main.IStack ->
+                 case w1 of wild {
+                   [] -> case Main.underflow ret_ty [GHC.Integer.Type.Integer] of {}
+                   : x ds
+                   -> case ds of wild1 {
+                        [] -> case Main.underflow ret_ty [GHC.Integer.Type.Integer] of {}
+                        : y xs
+                        -> case w y x of wild2 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary5
+                                  xs
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Integer.Type.Integer
+                                  Main.initialDictionary4
+                                  xs } } }) -}
+59f259dd952a4ff745456ff394cf6135
+  liftIntOp ::
+    (GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+    -> Main.IStack -> Main.IStack
+  {- Arity: 2, Strictness: <L,1*C1(C1(U))><S,1*U>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ op :: GHC.Integer.Type.Integer
+                         -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+                   ds :: [GHC.Integer.Type.Integer] ->
+                 case ds of wild {
+                   [] -> Main.underflow @ Main.IStack
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        [] -> Main.underflow @ Main.IStack
+                        : y xs
+                        -> GHC.Types.: @ GHC.Integer.Type.Integer (op y x) xs } }) -}
+0bbc943122fa237f65b08731becdf83e
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+54ba43dce95b8be76fef4aba6aeb4c83
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main3
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Main.main2 Main.initialForthState ipv }) -}
+9ca2d1fbdaf9a93f530f2982268ed1d7
+  main2 ::
+    Main.ForthState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,U)><L,U> -}
+94cb047a345e57e2f697353d1433c681
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Welcome to your Forth interpreter!"#) -}
+5748a013a66c5ac518b0aa3a3df88317
+  main4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+d2c0dad07c2595430fd6b19f352a41e4
+  repl :: Main.ForthState -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main2
+                  `cast`
+                (<Main.ForthState>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+5991df827c3f34c566cf4e9bc69202da
+  splitIf ::
+    [GHC.Base.String]
+    -> ([GHC.Base.String], [GHC.Base.String], [GHC.Base.String])
+  {- Arity: 1, Strictness: <L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: [GHC.Base.String] ->
+                 case Main.$wsplitIf w of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+7fd4c7cba8a319d89adbd32da31ca02c
+  splitIf1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "then"#) -}
+92953171918a7216012796ca24d0c602
+  splitIf2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "if"#) -}
+c64cc912923daf7e340f51800ebcdf42
+  splitIf3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+3cbfda1d3fd59b2ace69fb3ed63a9e25
+  splitWellNested :: GHC.Classes.Eq a => (a, a) -> [a] -> ([a], [a])
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A)><S,1*U(U,U)><S,U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a1 w :: GHC.Classes.Eq a1 w1 :: (a1, a1) w2 :: [a1] ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 case Main.$wsplitWellNested
+                        @ a1
+                        w
+                        ww1
+                        ww2
+                        w2 of ww3 { (#,#) ww4 ww5 ->
+                 (ww4, ww5) } }) -}
+7354e875e08049e243d528095507fd38
+  underflow :: a
+  {- Strictness: b -}
+instance GHC.Show.Show [Main.Entry] = Main.$fShowEntry
+"SPEC/Main $wupdateOrSnocWithKey @ String _" [0] forall @ v
+                                                        w :: GHC.Classes.Eq GHC.Base.String
+  Data.HashMap.Base.$wupdateOrSnocWithKey @ [GHC.Types.Char] @ v w
+  = Main.$s$wupdateOrSnocWithKey @ v
+"SPEC/Main insert @ String _" [ALWAYS] forall @ v
+                                              $dEq :: GHC.Classes.Eq GHC.Base.String
+                                              $dHashable :: Data.Hashable.Class.Hashable
+                                                              GHC.Base.String
+  Data.HashMap.Base.insert @ [GHC.Types.Char] @ v $dEq $dHashable
+  = Main.$sinsert @ v
+"SPEC/Main lookup @ String _" [ALWAYS] forall @ v
+                                              $dEq :: GHC.Classes.Eq GHC.Base.String
+                                              $dHashable :: Data.Hashable.Class.Hashable
+                                                              GHC.Base.String
+  Data.HashMap.Base.lookup @ [GHC.Types.Char] @ v $dEq $dHashable
+  = Main.$slookup @ v
+"SPEC/Main unsafeInsert @ String _" [ALWAYS] forall @ v
+                                                    $dEq :: GHC.Classes.Eq GHC.Base.String
+                                                    $dHashable :: Data.Hashable.Class.Hashable
+                                                                    GHC.Base.String
+  Data.HashMap.Base.unsafeInsert @ [GHC.Types.Char]
+                                 @ v
+                                 $dEq
+                                 $dHashable
+  = Main.$sunsafeInsert @ v
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,1320 @@
+
+==================== FINAL INTERFACE ====================
+2016-06-30 23:10:15.986499 UTC
+
+interface main@main:Tests 7103
+  interface hash: c1e97f9b3d6fc26c86fb1224b45af87f
+  ABI hash: 37ff862585935caedaa72fc793aee0b2
+  export-list hash: 03e316c98771aebd652140a48e80c0ec
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3a159a07789dbea68bf1cfdac9b2900a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tests.allTests
+  Tests.asOutput
+  Tests.asOutputs
+  Tests.tests_condition
+  Tests.tests_defn
+  Tests.tests_drop
+  Tests.tests_dup
+  Tests.tests_loop
+  Tests.tests_rot
+  Tests.tests_splitIf
+  Tests.tests_stackShow
+  Tests.tests_swap
+module dependencies: Main
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I integer-gmp-1.0.0.0
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I:Data.Hashable.Generic
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+                         unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw:Data.HashMap.Base
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  Main 9c5787c2394e1aada2c904d83f41b1ab
+  exports: ef4df482b0feb1fd921f80aeaca17b3c
+  eval 4e1d7af8c5da0da3804c0f5b4b64d455
+  initialForthState 90b653335cf1ad401d22ab8eb7141199
+  splitIf 5991df827c3f34c566cf4e9bc69202da
+4f83ac3b269a8c984ce22d56ecb3c2c8
+  $wasOutput ::
+    GHC.Base.String -> [GHC.Base.String] -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Base.String ww1 :: [GHC.Base.String] ->
+                 case Main.$weval
+                        (Data.OldList.words ww)
+                        (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                        (GHC.Types.[] @ [GHC.Base.String])
+                        Main.initialDictionary
+                        (GHC.Types.[]
+                           @ GHC.Base.String) of ww5 { (#,,,#) ww6 ww7 ww8 ww9 ->
+                 GHC.Classes.$fEq[]_$s$c==2
+                   (GHC.List.filter
+                      @ [GHC.Types.Char]
+                      (Tests.tests_loop16 @ GHC.Types.Char)
+                      ww9)
+                   (GHC.List.filter
+                      @ [GHC.Types.Char]
+                      (Tests.tests_loop16 @ GHC.Types.Char)
+                      ww1) }) -}
+475be21cf7b65687da4a002f05af913c
+  allTests :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests25
+                   Tests.allTests1) -}
+bc38399bb7adc4654b54e8a4c1466ce4
+  allTests1 :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests23
+                   Tests.allTests2) -}
+79c45849d975901e5d22688569a8c775
+  allTests10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "loop command `begin ... again`"#) -}
+d15dbf0252a4bdbaa5449b432d34f52b
+  allTests11 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_condition, Tests.allTests12)) -}
+28d8c5cf7ca42fe624f6382c25fa933f
+  allTests12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "if command `if ... [else ...] then`"#) -}
+27e811f4de1a9d2645ea2d113fcd0d44
+  allTests13 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_defn, Tests.allTests14)) -}
+9981298dad30da518fac817c781fd95e
+  allTests14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "definition command `: ... ;`"#) -}
+752963fd80da0a445cf0e04863b4a2fd
+  allTests15 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_rot, Tests.allTests16)) -}
+63bc0e2080fabb747a950bf5e486e5fa
+  allTests16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "stack manip command `rot`"#) -}
+59bb63de6fa36e754803b9ad373ef9d8
+  allTests17 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_swap, Tests.allTests18)) -}
+e4c5eb1e04d7523036da22eb1b9d2673
+  allTests18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "stack manip command `swap`"#) -}
+863eba047ba7c87b22037167d7d9b876
+  allTests19 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_drop, Tests.allTests20)) -}
+270cdfa0da3649400f0ce0330c9d1ac8
+  allTests2 :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests21
+                   Tests.allTests3) -}
+c673628dbd382ab25bd50819b718603e
+  allTests20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "stack manip command `drop`"#) -}
+cc5d54073100b92f3d42b09e534bd3bb
+  allTests21 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_dup, Tests.allTests22)) -}
+4237bf5d4ebc130c1de54994dce48b53
+  allTests22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "stack manip command `dup`"#) -}
+363239dc88bcb07d389027275c6d07ba
+  allTests23 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_stackShow, Tests.allTests24)) -}
+f43e50db8337f70260619789c043b3a2
+  allTests24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "show command `.S`"#) -}
+1757341fcfe8f1187cf80712af5737a7
+  allTests25 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_splitIf, Tests.allTests26)) -}
+3f8b2df969ad4476f90df92d6ae6147d
+  allTests26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "`splitIf` parser"#) -}
+22566372ff75905dfa0690493eb1f707
+  allTests3 :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests19
+                   Tests.allTests4) -}
+d1e7cb9fdf2bf7b90f7d9550c9b84f74
+  allTests4 :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests17
+                   Tests.allTests5) -}
+0e7056cc289704def4ddcc1c0d335d31
+  allTests5 :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests15
+                   Tests.allTests6) -}
+86ecb399ddc6829c3f85e9108f0e6733
+  allTests6 :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests13
+                   Tests.allTests7) -}
+74263c0fc98abb29dcc329c679f42a86
+  allTests7 :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests11
+                   Tests.allTests8) -}
+b15bc41b090d9c7887e6aea635f9bd5e
+  allTests8 :: [([GHC.Types.Bool], GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Bool], GHC.Base.String)
+                   Tests.allTests9
+                   (GHC.Types.[] @ ([GHC.Types.Bool], GHC.Base.String))) -}
+5abd892b35571a4abaf16c7457a37bf8
+  allTests9 :: ([GHC.Types.Bool], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Tests.tests_loop, Tests.allTests10)) -}
+c181c8e7841a9458ece35002d87fde42
+  asOutput :: (GHC.Base.String, [GHC.Base.String]) -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S(SS),1*U(1*U,1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: (GHC.Base.String, [GHC.Base.String]) ->
+                 case w of ww { (,) ww1 ww2 -> Tests.$wasOutput ww1 ww2 }) -}
+944b531e93240339c4e453d259bb7d33
+  asOutputs ::
+    [(GHC.Base.String, [GHC.Base.String])] -> [GHC.Types.Bool]
+  {- Arity: 1,
+     Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   @ GHC.Types.Bool
+                   Tests.asOutput) -}
+37a7ac3b4966c7ab35044bdd1126ff9d
+  tests_condition :: [GHC.Types.Bool]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   @ GHC.Types.Bool
+                   Tests.asOutput
+                   Tests.tests_condition1) -}
+2468f5158fd1d2e180773b47f3d107e6
+  tests_condition1 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_condition26
+                   Tests.tests_condition2) -}
+0da1f1dd390847f10a17120ff4868fc0
+  tests_condition10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "30"#) -}
+62de13736d897454c1c76a381b5ef0a8
+  tests_condition11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 > if 3 4 < if 10 else 20 then else 30 then ."#) -}
+9d721809f2cf17668040b454d8e602a9
+  tests_condition12 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_condition15,
+                  Tests.tests_condition13)) -}
+7e944dbc33cbeb593cbfeee89a49ff40
+  tests_condition13 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_condition14
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+5d0eb62bd704ec7d77b81f73bb39fadc
+  tests_condition14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "20"#) -}
+e522efa87b58c2e0108dbc3c3905d607
+  tests_condition15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 < if 3 4 > if 10 else 20 then else 30 then ."#) -}
+462f69d2f99c87687065e6f597d6ba6a
+  tests_condition16 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_condition19,
+                  Tests.tests_condition17)) -}
+ef502fdd9466a184f582a81bfbadf1ad
+  tests_condition17 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_condition18
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+f1072956b7153ec0f76055f7ea03e645
+  tests_condition18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "10"#) -}
+a3c993bb0c8495bdd0d806d551380baf
+  tests_condition19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 < if 3 4 < if 10 else 20 then else 30 then ."#) -}
+bbcf8bb617c7360be7a12fb5fe0e8ac8
+  tests_condition2 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_condition24
+                   Tests.tests_condition3) -}
+671fc7e0289f2b534f606d14d40c4168
+  tests_condition20 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_condition21,
+                  Tests.tests_condition17)) -}
+75a82139e3f9d09b31eb9a9542ba1060
+  tests_condition21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 < if 10 then .S"#) -}
+dd6923549eea827c4e2fb53b0074712c
+  tests_condition22 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_condition23,
+                  GHC.Types.[] @ GHC.Base.String)) -}
+c1f00cfe775547d57db0a76ac0e53c54
+  tests_condition23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 > if 10 then .S"#) -}
+6af6b49f81e8ae7a30045bac452a9e82
+  tests_condition24 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_condition25,
+                  Tests.tests_condition13)) -}
+15e5ad7363fa63fa357eacc0e8f3ee9b
+  tests_condition25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 > if 10 else 20 then ."#) -}
+b51d2dfdc4758a904defea7924d33b8a
+  tests_condition26 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_condition27,
+                  Tests.tests_condition17)) -}
+5869704c2c20acc7006fef38f72b7112
+  tests_condition27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 < if 10 else 20 then ."#) -}
+6e5aaaf2182e3e0c9b6795b3e990a87e
+  tests_condition3 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_condition22
+                   Tests.tests_condition4) -}
+ab8c8ac100e408497ca52f9e5909c886
+  tests_condition4 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_condition20
+                   Tests.tests_condition5) -}
+fe81590e552eb63830767d4be52d2422
+  tests_condition5 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_condition16
+                   Tests.tests_condition6) -}
+15db36aa9cd84966ecf3cd1f14d13281
+  tests_condition6 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_condition12
+                   Tests.tests_condition7) -}
+bcdf4bba8fe03b24e519559eecc75990
+  tests_condition7 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_condition8
+                   (GHC.Types.[] @ (GHC.Base.String, [GHC.Base.String]))) -}
+fefa14451d521ae81b02fdb199d6ffbe
+  tests_condition8 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_condition11,
+                  Tests.tests_condition9)) -}
+1a983f3a4ddd9a6c8cb9d7d3d358a5ab
+  tests_condition9 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_condition10
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+16d81f02e3816377316db9fb8ae2a7c9
+  tests_defn :: [GHC.Types.Bool]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   @ GHC.Types.Bool
+                   Tests.asOutput
+                   Tests.tests_defn1) -}
+38bf1d9f0b360be88287023aad1fd26c
+  tests_defn1 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_defn29
+                   Tests.tests_defn2) -}
+f5d6faab18320f5c38fd041943d2806d
+  tests_defn10 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn11
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+3ce351ee48f42c2911ed5378415b5d19
+  tests_defn11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "5"#) -}
+e738d076616f158861955b3ceb5e7dc3
+  tests_defn12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "6"#) -}
+c130d51f8f4c6d69eff0c61bbec6a1aa
+  tests_defn13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "7"#) -}
+6e2a349ae543bc6bbfdc02d27f5f048a
+  tests_defn14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ": print dup . : print . ; ; 5 6 7 print print print print"#) -}
+07013279c53fbcd1d5c2bd38980122aa
+  tests_defn15 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_defn17, Tests.tests_defn16)) -}
+0c7ae9caca6df2339cf0775847aadd32
+  tests_defn16 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn11
+                   Tests.tests_defn10) -}
+e140202e9040eb0b18a4913b77478646
+  tests_defn17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ": . dup ; 5 5 . .S"#) -}
+8183e402d9ed85686a05de854f2ce699
+  tests_defn18 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_defn24, Tests.tests_defn19)) -}
+2365328243553b52f76531e9cfdc81fc
+  tests_defn19 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn11
+                   Tests.tests_defn20) -}
+b0fd79fbce0bd850c293f776a9304e9d
+  tests_defn2 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_defn25
+                   Tests.tests_defn3) -}
+2bcc074aade7e6318a8c86991764c94f
+  tests_defn20 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn11
+                   Tests.tests_defn21) -}
+e73118866e1b2846a19b0c67bb495f69
+  tests_defn21 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop34
+                   Tests.tests_defn22) -}
+4e5943539f5acaa0aea14bed050e44cf
+  tests_defn22 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn23
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+e3c3799e5b55112b837c6355b69d6a1b
+  tests_defn23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "4 4"#) -}
+1648eb1ccf6ab325dd9ce49d065800bf
+  tests_defn24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ": print dup . ; 4 4 5 print . print .S"#) -}
+0196d8c67d7fc990b8d20ca57b794af0
+  tests_defn25 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_defn28, Tests.tests_defn26)) -}
+6a9ea4c1c690a5fad454c192be106e24
+  tests_defn26 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn27
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+3682b283d230ef17e0300b06cfd89345
+  tests_defn27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "4 5 5 4"#) -}
+21981d440ca69a58334c1588191a7437
+  tests_defn28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ": dupRot dup rot ; 4 4 5 dupRot .S"#) -}
+4e37a484cc42ef49953d72374ac398ec
+  tests_defn29 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_defn32, Tests.tests_defn30)) -}
+e01c91ca7d797e7c4779c02875b20cc8
+  tests_defn3 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_defn18
+                   Tests.tests_defn4) -}
+9c13e78068806f7550df59c1b5a97dea
+  tests_defn30 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn31
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+151b39092b885b2c5f8aabdf3a34c43c
+  tests_defn31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "16"#) -}
+0f1ef9269011e7a7e5974d416f7417f6
+  tests_defn32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ": square dup * ; 4 square ."#) -}
+6540ffb43872e6ad1bbaac69072ef5fd
+  tests_defn4 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_defn15
+                   Tests.tests_defn5) -}
+1564235e93714f3a0f61803e52613fdb
+  tests_defn5 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_defn6
+                   (GHC.Types.[] @ (GHC.Base.String, [GHC.Base.String]))) -}
+3802d706e765fec02a8af199c8cbba2a
+  tests_defn6 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_defn14, Tests.tests_defn7)) -}
+7264a429060f2eeb5bdcf4afbfa9ea80
+  tests_defn7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn13
+                   Tests.tests_defn8) -}
+f9fd19b328ceb45a55957c48c2690473
+  tests_defn8 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn13
+                   Tests.tests_defn9) -}
+a8daaae172443b032b3542519be5c048
+  tests_defn9 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn12
+                   Tests.tests_defn10) -}
+e784c85b305333973570051e0aea143b
+  tests_drop :: [GHC.Types.Bool]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   @ GHC.Types.Bool
+                   Tests.asOutput
+                   Tests.tests_drop1) -}
+3f9fa17a9d9320a99a357b260245794d
+  tests_drop1 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_drop13
+                   Tests.tests_drop2) -}
+6988e7b442ffdb6826d9dd5b00891667
+  tests_drop10 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop34
+                   Tests.tests_drop11) -}
+aa9043e2955c7f8b4a99dd95e3231c8b
+  tests_drop11 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_rot16
+                   Tests.tests_rot14) -}
+8cef501dac558e7b23a1db67f824998d
+  tests_drop12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4 . .S drop .S"#) -}
+1c886d4f0a1acb849b6a59bf1c747ad7
+  tests_drop13 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_drop15, Tests.tests_drop14)) -}
+2138b110a61f831b54f5c13e0cfaa834
+  tests_drop14 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_rot16
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+5e592814fc9c7f9b619499410d3e7ef4
+  tests_drop15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4 drop .S"#) -}
+aac0ddd2696d92c94299b76423e2a708
+  tests_drop2 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_drop9
+                   Tests.tests_drop3) -}
+e74d8d2bb3d787aa8051ea2c3a27adb0
+  tests_drop3 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_drop4
+                   (GHC.Types.[] @ (GHC.Base.String, [GHC.Base.String]))) -}
+191b843b9fd0b06ac5a2b2847aa87171
+  tests_drop4 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_drop8, Tests.tests_drop5)) -}
+16f47033c20187d6f1a9702d763b1f57
+  tests_drop5 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn12
+                   Tests.tests_drop6) -}
+d03b0996769f6533863725d1b87d943b
+  tests_drop6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn11
+                   Tests.tests_drop7) -}
+c9bd0cfe5ebabbf8b0d80df93872e0e5
+  tests_drop7 :: [GHC.Base.String]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+af8e43e25eff05ecbb3ab3e822a275e2
+  tests_drop8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "6 23 drop . 5 5 drop . .S"#) -}
+19317130947463d578da47979994e98a
+  tests_drop9 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_drop12, Tests.tests_drop10)) -}
+2010f77399a161502ec008e7ede22e90
+  tests_dup :: [GHC.Types.Bool]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   @ GHC.Types.Bool
+                   Tests.asOutput
+                   Tests.tests_dup1) -}
+4888cc62a81c982a52fc1d9cf2d4eafd
+  tests_dup1 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_dup9
+                   Tests.tests_dup2) -}
+7f566b30739d911ec22758cb9799e3c7
+  tests_dup10 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_dup11
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+3cf7e0093326d949f53b10b426783b7f
+  tests_dup11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4 4"#) -}
+4c84bae167243ed299424d5d27806382
+  tests_dup12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4 dup .S"#) -}
+72ac6c42e942a0ca8bc09c9964f98b88
+  tests_dup2 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_dup3
+                   (GHC.Types.[] @ (GHC.Base.String, [GHC.Base.String]))) -}
+851a9eddb7de36e94d367c284d8c5767
+  tests_dup3 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_dup8, Tests.tests_dup4)) -}
+b711b66365ffda9f84d77b5d9edf56ff
+  tests_dup4 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop34
+                   Tests.tests_dup5) -}
+b7f99e836bfd9004da86da678495d609
+  tests_dup5 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_rot16
+                   Tests.tests_dup6) -}
+2c3a7277fd7026c38bc08e764037902c
+  tests_dup6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_dup7
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+d361b85bf0fbc1f6108bc3686b5bae6e
+  tests_dup7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 3"#) -}
+18aa2dbcff9c5f2d4b450c1b72fc88c1
+  tests_dup8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4 . .S dup .S"#) -}
+2c82d80f7866fe088c059bda4ee4c6df
+  tests_dup9 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_dup12, Tests.tests_dup10)) -}
+efeccd65ff1537799a0a88157afb1a4c
+  tests_loop :: [GHC.Types.Bool]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   Tests.tests_loop24
+                   Tests.tests_loop1) -}
+15210a2a48b6d3e7821bd3254a3ccf1a
+  tests_loop1 :: [GHC.Types.Bool]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   Tests.tests_loop17
+                   Tests.tests_loop2) -}
+80ff564a957cc9c669c802f5c746b680
+  tests_loop10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "362880"#) -}
+598d7e4f44390645fe7eb05577964d87
+  tests_loop11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3628800"#) -}
+bc7c617e19a3d003ef7a80560530b4c0
+  tests_loop12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "39916800"#) -}
+f5347d80a2d8142c4a680de3fe7abf71
+  tests_loop13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "479001600"#) -}
+1a9a0b0350f5fea472ef96ec0613b11d
+  tests_loop14 :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Tests.tests_loop_factFunc
+                   Tests.tests_loop15) -}
+a46bcef21dfe5c6c92a104054ecf3232
+  tests_loop15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   " : exitIfSame dup rot dup rot - swap rot rot if else exit then ; : seq begin exitIfSame swap dup 1 + rot again drop ; 7 12 seq fact . fact . fact . fact . fact ."#) -}
+12ddb01747aeaf5c328c76ed70098829
+  tests_loop16 :: [a] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a x :: [a] ->
+                 case x of wild {
+                   [] -> GHC.Types.False : ds1 ds2 -> GHC.Types.True }) -}
+1ff94f55c41fdab7cd166e620682412b
+  tests_loop17 :: GHC.Types.Bool
+  {- Unfolding: (Tests.$wasOutput
+                   Tests.tests_loop22
+                   Tests.tests_loop18) -}
+62adf1dd3096a2eead0fc03c82defefb
+  tests_loop18 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop21
+                   Tests.tests_loop19) -}
+a424fe24cea07194458d3aa92987a244
+  tests_loop19 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop20
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+8c9649ba3286afbdf9ddf44d943ec882
+  tests_loop2 :: [GHC.Types.Bool]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   Tests.tests_loop3
+                   (GHC.Types.[] @ GHC.Types.Bool)) -}
+beeb3018500a50056d0ba69e55c06d60
+  tests_loop20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "120"#) -}
+6d63e027dc0c50a05ca56255de0223f0
+  tests_loop21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "24"#) -}
+bd50778f1df1d41fc5bda1d0a4387548
+  tests_loop22 :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Tests.tests_loop_factFunc
+                   Tests.tests_loop23) -}
+f6352134df2d6b9656fea21902291db5
+  tests_loop23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# " 4 fact . 5 fact ."#) -}
+a771d73a807daaac0419bd1c14481500
+  tests_loop24 :: GHC.Types.Bool
+  {- Unfolding: (Tests.$wasOutput
+                   Tests.tests_loop35
+                   Tests.tests_loop25) -}
+c9539004c363e204a9cb73687fdf4adc
+  tests_loop25 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop34
+                   Tests.tests_loop26) -}
+9fba6340ab6a6ce9e351028465fc8a6a
+  tests_loop26 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop33
+                   Tests.tests_loop27) -}
+ceb2bfc328e53b193c85504f719fd481
+  tests_loop27 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop32
+                   Tests.tests_loop28) -}
+e1ef3213b660bf0efea8d87c4e55b0e3
+  tests_loop28 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop31
+                   Tests.tests_loop29) -}
+797fe3918dd2da7795be8501c57620c1
+  tests_loop29 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop30
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+e09a57ac133755d4f37bf3b559d102b4
+  tests_loop3 :: GHC.Types.Bool
+  {- Unfolding: (Tests.$wasOutput
+                   Tests.tests_loop14
+                   Tests.tests_loop4) -}
+68d562b349d6b26c23349da8e51a04aa
+  tests_loop30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "0"#) -}
+059347227e2ad6a5ec1592bcf7e829be
+  tests_loop31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1"#) -}
+d6039b0b3e59e6dbd460aaaac787c86e
+  tests_loop32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2"#) -}
+c67cf3cd833980bf26f517e9fbde530f
+  tests_loop33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3"#) -}
+f3c92e1e78d8b6a4e36415bc12d3f341
+  tests_loop34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "4"#) -}
+4aa08e570b50403314cc0655fe247ac8
+  tests_loop35 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "4 begin dup . dup 0 > if 1 - else exit then again"#) -}
+d14980a9c1153e4a6ba3a1d16f57fc88
+  tests_loop4 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop13
+                   Tests.tests_loop5) -}
+6d55108c6769927036d7c36b1b98f16d
+  tests_loop5 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop12
+                   Tests.tests_loop6) -}
+ca5e3b5f95cc706afc6d6d3001d8bce7
+  tests_loop6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop11
+                   Tests.tests_loop7) -}
+8292d6fb904e9d67baf4ea08c34075d6
+  tests_loop7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop10
+                   Tests.tests_loop8) -}
+f1201c803bf79a1ed139bc4fc899cb31
+  tests_loop8 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop9
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+b5fe7d04407dd550ab3bdecdad076218
+  tests_loop9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "40320"#) -}
+c7ec15787e340127e5bf30e5d37e0676
+  tests_loop_factFunc :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ": exitOnZero dup if else drop exit then ; : fact dup begin 1 - exitOnZero dup rot * swap again ;"#) -}
+d32aa5207c1d9a3f2f00aa9e4f583261
+  tests_rot :: [GHC.Types.Bool]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   @ GHC.Types.Bool
+                   Tests.asOutput
+                   Tests.tests_rot1) -}
+bb71a551428c4a05b059c6dbfd82608f
+  tests_rot1 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_rot18
+                   Tests.tests_rot2) -}
+f47a0b11678e68cd82b2dafb1fae9b25
+  tests_rot10 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_rot17, Tests.tests_rot11)) -}
+022d087a5363557aba8179079bbc8435
+  tests_rot11 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop34
+                   Tests.tests_rot12) -}
+275b28eb5db3265c6558ab70e978bb8a
+  tests_rot12 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_rot16
+                   Tests.tests_rot13) -}
+05d771c9f9f2fb488080b063325ce2b0
+  tests_rot13 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_rot15
+                   Tests.tests_rot14) -}
+6a6175397a4fc13a339e4bbb62c329c6
+  tests_rot14 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop32
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+33855bd8466e24216b7af2a2be5775a0
+  tests_rot15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3 5 2 5 4"#) -}
+1244bdb1d27213f4d78b29dc3017f0f9
+  tests_rot16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3"#) -}
+567722dccde0e463e67f2ce015255fe8
+  tests_rot17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "2 3 4 . .S 5 rot 4 5 swap .S rot ."#) -}
+4bc2b226a39eff8b232f43cb5a43f866
+  tests_rot18 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_rot21, Tests.tests_rot19)) -}
+a9f5cb8ff56661fb63f5e784899fc5ce
+  tests_rot19 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_rot20
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+95de673728b9304f3314b48d9819923f
+  tests_rot2 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_rot10
+                   Tests.tests_rot3) -}
+e40070edb95f3db4880d2e77ca49de06
+  tests_rot20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3 4 2"#) -}
+810a577296acbe980f9a2ab36e6ee582
+  tests_rot21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4 rot .S"#) -}
+9c4b1cc2e032e1604ca2275aca969d2b
+  tests_rot3 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_rot4
+                   (GHC.Types.[] @ (GHC.Base.String, [GHC.Base.String]))) -}
+6c5f6809cf5cb50f071f29d06e088206
+  tests_rot4 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_rot9, Tests.tests_rot5)) -}
+9fc70298fd3540782da96a2c50249a47
+  tests_rot5 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn12
+                   Tests.tests_rot6) -}
+6927c985abfe9ff9b416b6a592599a3d
+  tests_rot6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn11
+                   Tests.tests_rot7) -}
+e6534c62a328d9bd0ed8a85496fb55ef
+  tests_rot7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_rot8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+c23a1ab318cb6c5a96b1043d4b641d9c
+  tests_rot8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 6 5"#) -}
+2f287c0dfdb4477d50cc0f49ac9e400b
+  tests_rot9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "6 23 drop . 5 5 6 2 rot . swap rot .S"#) -}
+69b0ec12030c47005f05f69bf7c1531f
+  tests_splitIf :: [GHC.Types.Bool]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   Tests.tests_splitIf28
+                   Tests.tests_splitIf1) -}
+1f3b6f43b109a823820a4c32724bac29
+  tests_splitIf1 :: [GHC.Types.Bool]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   Tests.tests_splitIf21
+                   Tests.tests_splitIf2) -}
+d9bc84baecc22ac3ba0dfdcc8335ab57
+  tests_splitIf10 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf11) -}
+960c908dee67577fe609baf60e916053
+  tests_splitIf11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "begin 3 3 dup . if 4 - dup else 5 - dup then again then 5 5 ."#) -}
+fb2385453c12bde1c155531953112a36
+  tests_splitIf12 :: GHC.Types.Bool
+  {- Unfolding: (case Main.$wsplitIf
+                        Tests.tests_splitIf19 of ww { (#,,#) ww1 ww2 ww3 ->
+                 case GHC.Classes.$fEq[]_$s$c==2 ww1 Tests.tests_splitIf17 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Classes.$fEq[]_$s$c==2
+                             ww2
+                             Tests.tests_splitIf15 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> GHC.Classes.$fEq[]_$s$c==2 ww3 Tests.tests_splitIf13 } } }) -}
+7caec8c5939e68b1e8059143ab64563e
+  tests_splitIf13 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf14) -}
+f9be354b3fec748090b10d7bee20c6b9
+  tests_splitIf14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ". .S"#) -}
+6ba13294bef601eecde03a1e215dd419
+  tests_splitIf15 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf16) -}
+4f4fe902364b7946fa9f8a842b9b3a0f
+  tests_splitIf16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "0 if 3 else 0 if 4 then then 5 6"#) -}
+9a2e9dc299fb81a9abddc220520f83ca
+  tests_splitIf17 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf18) -}
+f14b4d48096ca789be98d0cf0edfbef4
+  tests_splitIf18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ". 5 if : 3 4 ; then"#) -}
+7da2f3726d9b2abc1227b5b5cad4db0f
+  tests_splitIf19 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf20) -}
+373fe9cf70297d68c0f4c4749cc6e382
+  tests_splitIf2 :: [GHC.Types.Bool]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   Tests.tests_splitIf12
+                   Tests.tests_splitIf3) -}
+e0f67b515f7d1ea6a167a880461e6999
+  tests_splitIf20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ". 5 if : 3 4 ; then else 0 if 3 else 0 if 4 then then 5 6 then . .S"#) -}
+883c73599a1d3852bd0cff8d8dd36fe8
+  tests_splitIf21 :: GHC.Types.Bool
+  {- Unfolding: (case Main.$wsplitIf
+                        Tests.tests_splitIf26 of ww { (#,,#) ww1 ww2 ww3 ->
+                 case GHC.Classes.$fEq[]_$s$c==2 ww1 Tests.tests_splitIf24 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Classes.$fEq[]_$s$c==2
+                             ww2
+                             (GHC.Types.[] @ GHC.Base.String) of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> GHC.Classes.$fEq[]_$s$c==2 ww3 Tests.tests_splitIf22 } } }) -}
+af7e97b610a41549743f3ffd056ef86d
+  tests_splitIf22 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf23) -}
+94bf98f4ba172c9b5feaa92325db3ceb
+  tests_splitIf23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "5 ."#) -}
+7e03665db7edee4cfa62d302732d5504
+  tests_splitIf24 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf25) -}
+8aff0f873d74e052816fccca88cdb933
+  tests_splitIf25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ". 5 7 3 4 < if . else 5 then"#) -}
+fe8fac0672b03089309ef30929d10bc0
+  tests_splitIf26 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf27) -}
+61955dad39642b2b0a4d3e7637976039
+  tests_splitIf27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ". 5 7 3 4 < if . else 5 then then 5 ."#) -}
+5950b46237bcdfdb048d9b58fac0972d
+  tests_splitIf28 :: GHC.Types.Bool
+  {- Unfolding: (case Main.$wsplitIf
+                        Tests.tests_splitIf33 of ww { (#,,#) ww1 ww2 ww3 ->
+                 case GHC.Classes.$fEq[]_$s$c==2 ww1 Tests.tests_splitIf31 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Classes.$fEq[]_$s$c==2
+                             ww2
+                             Tests.tests_splitIf29 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> GHC.Classes.$fEq[]_$s$c==2 ww3 Tests.tests_splitIf22 } } }) -}
+22749a66c58ef358e67da4ffd7b842ad
+  tests_splitIf29 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf30) -}
+ca8651ac92478359c2f0563ee2454c2e
+  tests_splitIf3 :: [GHC.Types.Bool]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   Tests.tests_splitIf4
+                   (GHC.Types.[] @ GHC.Types.Bool)) -}
+dba6511024608607f77d03a378485683
+  tests_splitIf30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 < if . else 5 then"#) -}
+bd53f15063c7341a28f7ba1759517e84
+  tests_splitIf31 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf32) -}
+8f84ee2c38ab1093da9696b4ceb10de1
+  tests_splitIf32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ". 5 7"#) -}
+bbbfb12aaf9e6574db9a851c7077f5fd
+  tests_splitIf33 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf34) -}
+effd4576f9894324cfdda8a40051b678
+  tests_splitIf34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ". 5 7 else 3 4 < if . else 5 then then 5 ."#) -}
+43612dfc253bfcbbc49f3139e90805d5
+  tests_splitIf4 :: GHC.Types.Bool
+  {- Unfolding: (case Main.$wsplitIf
+                        Tests.tests_splitIf10 of ww { (#,,#) ww1 ww2 ww3 ->
+                 case GHC.Classes.$fEq[]_$s$c==2 ww1 Tests.tests_splitIf8 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Classes.$fEq[]_$s$c==2
+                             ww2
+                             Tests.tests_splitIf7 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> GHC.Classes.$fEq[]_$s$c==2 ww3 Tests.tests_splitIf5 } } }) -}
+254d2c52a1ad4f195bfff3c0f940abf8
+  tests_splitIf5 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf6) -}
+5913cdf48b948f11276f0df632675dba
+  tests_splitIf6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "5 5 ."#) -}
+811fe232e99d0a5c13a20eff02a26bf5
+  tests_splitIf7 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+cbe842df74a624053f007d7c0431870e
+  tests_splitIf8 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Tests.tests_splitIf9) -}
+61c0e6e1e976a01bdd735762b3721fd7
+  tests_splitIf9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "begin 3 3 dup . if 4 - dup else 5 - dup then again"#) -}
+925c43b49e1d75f2b674cd44157dbbe6
+  tests_stackShow :: [GHC.Types.Bool]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   @ GHC.Types.Bool
+                   Tests.asOutput
+                   Tests.tests_stackShow1) -}
+b1318bb31b2a37590f53874703675f52
+  tests_stackShow1 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_stackShow17
+                   Tests.tests_stackShow2) -}
+f33f8a8d66772cfcd798be242e964130
+  tests_stackShow10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "9 3 2 . 2 4 .S 2 5 .S 2 ."#) -}
+4b3ae1140a1b12205c7f0c1aef46eff8
+  tests_stackShow11 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_stackShow16,
+                  Tests.tests_stackShow12)) -}
+e1258b066fd86fdd3f7ac8e4a54b1421
+  tests_stackShow12 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_stackShow15
+                   Tests.tests_stackShow13) -}
+913142b2e7306034c94a54ae394a0a95
+  tests_stackShow13 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_stackShow14
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+e83c7add6b7039cede9e782cc65b4522
+  tests_stackShow14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3 4 2 5 2 4 6"#) -}
+f1637a60687c88420b0fe5b22424a3cb
+  tests_stackShow15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3 4 2 5"#) -}
+762638550173098220ac971f5b984da6
+  tests_stackShow16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3 4 2 5 .S 2 4 6 .S"#) -}
+e160dcdef67d2c2ee73e5ecbd8346e64
+  tests_stackShow17 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_stackShow20,
+                  Tests.tests_stackShow18)) -}
+0b8457c987e98d676d9c606f883bf111
+  tests_stackShow18 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_stackShow19
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+1befad7d7d3b9f2cafee6e76f825c6ca
+  tests_stackShow19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4"#) -}
+03157a475059a0e2b12c4d0ee8570e98
+  tests_stackShow2 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_stackShow11
+                   Tests.tests_stackShow3) -}
+50345ca084ebf6c5cf9163283d549497
+  tests_stackShow20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4 .S"#) -}
+13ff40e501126e2f60850473524e42f7
+  tests_stackShow3 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_stackShow4
+                   (GHC.Types.[] @ (GHC.Base.String, [GHC.Base.String]))) -}
+8ecb2bd1fd35121c7ac5c6f7a9323487
+  tests_stackShow4 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_stackShow10,
+                  Tests.tests_stackShow5)) -}
+50eae477c3fc0c04f430c411f304e8f5
+  tests_stackShow5 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop32
+                   Tests.tests_stackShow6) -}
+90e3c8af269af246ce66fb36497a5651
+  tests_stackShow6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_stackShow9
+                   Tests.tests_stackShow7) -}
+b3af6dfd56d07449399747f410feaebf
+  tests_stackShow7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_stackShow8
+                   Tests.tests_rot14) -}
+0eff57a39df6d509b6695cf66c13a509
+  tests_stackShow8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "9 3 2 4 2 5"#) -}
+27f532637f5432afc8ed189b2062f42c
+  tests_stackShow9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "9 3 2 4"#) -}
+ced9045fa027c2843a45db91cb3683d6
+  tests_swap :: [GHC.Types.Bool]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   @ GHC.Types.Bool
+                   Tests.asOutput
+                   Tests.tests_swap1) -}
+f4047f7036a51927bac368cc74906000
+  tests_swap1 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_swap16
+                   Tests.tests_swap2) -}
+1d567b1650e53b0f50ce39e5c4124c7b
+  tests_swap10 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_swap15, Tests.tests_swap11)) -}
+dc44523c8119e54bef348a46d6097ce1
+  tests_swap11 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_loop34
+                   Tests.tests_swap12) -}
+2d3000bcb2b35785a20bf06c2c718996
+  tests_swap12 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_rot16
+                   Tests.tests_swap13) -}
+f90cb1a5e43857e934319ec0b021c332
+  tests_swap13 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_swap14
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+c08a271d35641d22f9c427ab9a5b9f5b
+  tests_swap14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3 2 5 4"#) -}
+50011b27d1886dbfeec817d613f4bd07
+  tests_swap15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "2 3 4 . .S swap 4 5 swap .S"#) -}
+26f432833e3b780c3d3dd16a6dd0ac51
+  tests_swap16 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_swap19, Tests.tests_swap17)) -}
+a4e582c869e7c7c882e5849223cc54f7
+  tests_swap17 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_swap18
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+f446aee478d5f522a3433ffb33f80aeb
+  tests_swap18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 4 3"#) -}
+09c0bf087efefa205739f2d941c924e6
+  tests_swap19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2 3 4 swap .S"#) -}
+418c922f446e91544e113036649bc6c1
+  tests_swap2 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_swap10
+                   Tests.tests_swap3) -}
+544aab93750fa8a523c2fa829b2d59c3
+  tests_swap3 :: [(GHC.Base.String, [GHC.Base.String])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Base.String])
+                   Tests.tests_swap4
+                   (GHC.Types.[] @ (GHC.Base.String, [GHC.Base.String]))) -}
+f2258419c62c786e40d36f337660828d
+  tests_swap4 :: ([GHC.Types.Char], [GHC.Base.String])
+  {- Unfolding: ((Tests.tests_swap9, Tests.tests_swap5)) -}
+00fb346734fc3793bb976281889a6739
+  tests_swap5 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn12
+                   Tests.tests_swap6) -}
+adc8d5d3dafb676997a75e6c2ab2ec79
+  tests_swap6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_defn12
+                   Tests.tests_swap7) -}
+3c3ccb86b34e0a8f12f1173c68ae0797
+  tests_swap7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.tests_swap8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+2ae0873621b27b40925b864a94f47fd2
+  tests_swap8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "5 2 5"#) -}
+645505d9444371e27b1001c368a16aa5
+  tests_swap9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "6 23 drop . 5 5 6 2 swap . swap .S"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

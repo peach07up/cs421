@@ -1,0 +1,1328 @@
+
+==================== FINAL INTERFACE ====================
+2016-06-18 03:48:46.227538 UTC
+
+interface main@main:Main 7103
+  interface hash: 393af665dd5a88c0f011176658ac3ccc
+  ABI hash: bbac967e0bcbe291550ab268511254b5
+  export-list hash: 142a5cef8967f4d68c8697a89fed9765
+  orphan hash: 629dcab44c5c2267155c4b2f05a9120b
+  flag hash: 9fa3abe61691f670d8142cb587854eee
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.addOp
+  Main.arith
+  Main.atom
+  Main.compOp
+  Main.compOps
+  Main.eval
+  Main.expr
+  Main.factor
+  Main.getInt
+  Main.int
+  Main.intExp
+  Main.intOps
+  Main.liftCompOp
+  Main.liftIntOp
+  Main.main
+  Main.mulOp
+  Main.repl
+  Main.symbol
+  Main.term
+  Main.varExp
+  Main.Env
+  Main.Exp{Main.CompOpExp Main.IntExp Main.IntOpExp Main.VarExp}
+  Main.Val{Main.BoolVal Main.ExnVal Main.IntVal}
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+import  -/  base-4.8.2.0:Data.Either e8724afd65fd432cfe9a54014f5f762d
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  base-4.8.2.0:Text.Read ef0ef92fb7358ae94bab089940adfd2a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 371e90fe753f08ddedf0d2657a9ef5c4
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec c05736a9c25b1f808889c3a01d7fc294
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec.Char 77b3557e3ecaea793fde214056c0a76d
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec.Combinator 499c004f8668564f5c78d75c6516a398
+import  -/  parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y:Text.Parsec.Prim 655d3264df71f01577b89371493f8c14
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $fEqExp :: GHC.Classes.Eq Main.Exp
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:. @ Main.Exp Main.$fEqExp_$c== Main.$fEqExp_$c/= -}
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $fEqExp_$c/= :: Main.Exp -> Main.Exp -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a6 :: Main.Exp b :: Main.Exp ->
+                 case Main.$fEqExp_$c== a6 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $fEqExp_$c== :: Main.Exp -> Main.Exp -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $fEqVal :: GHC.Classes.Eq Main.Val
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:. @ Main.Val Main.$fEqVal_$c== Main.$fEqVal_$c/= -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $fEqVal_$c/= :: Main.Val -> Main.Val -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a6 :: Main.Val b :: Main.Val ->
+                 case Main.$fEqVal_$c== a6 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $fEqVal_$c== :: Main.Val -> Main.Val -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ ds :: Main.Val ds1 :: Main.Val ->
+                 case ds of wild {
+                   Main.IntVal a6
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Main.IntVal b1 -> GHC.Integer.Type.eqInteger a6 b1 }
+                   Main.BoolVal a6
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Main.BoolVal b1 -> GHC.Classes.$fEqBool_$c== a6 b1 }
+                   Main.ExnVal a6
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Main.ExnVal b1 -> GHC.Base.eqString a6 b1 } }) -}
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $fShowExp :: GHC.Show.Show Main.Exp
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Exp
+                  Main.$fShowExp_$cshowsPrec
+                  Main.$fShowExp_$cshow
+                  Main.$fShowExp_$cshowList -}
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $fShowExp1 :: Main.Exp -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: Main.Exp w1 :: GHC.Base.String ->
+                 Main.$w$cshowsPrec 0 w w1) -}
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $fShowExp_$cshow :: Main.Exp -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x10 :: Main.Exp ->
+                 Main.$fShowExp_$cshowsPrec
+                   GHC.Show.shows18
+                   x10
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $fShowExp_$cshowList :: [Main.Exp] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Main.Exp Main.$fShowExp1) -}
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $fShowExp_$cshowsPrec ::
+    GHC.Types.Int -> Main.Exp -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,1*U(U)><S,1*U><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int w1 :: Main.Exp w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Main.$w$cshowsPrec ww1 w1 w2 }) -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $fShowVal :: GHC.Show.Show Main.Val
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Val
+                  Main.$fShowVal_$cshowsPrec
+                  Main.$fShowVal_$cshow
+                  Main.$fShowVal_$cshowList -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $fShowVal1 :: Main.Val -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: Main.Val w1 :: GHC.Base.String ->
+                 Main.$w$cshowsPrec1 0 w w1) -}
+79771d39d3877383f08be054aacddb73
+  $fShowVal2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ExnVal "#) -}
+5d1f9f0e9713c74f422de233647068eb
+  $fShowVal3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "BoolVal "#) -}
+c158bfebe1727da579e84b0af3cbd459
+  $fShowVal4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "IntVal "#) -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $fShowVal_$cshow :: Main.Val -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x10 :: Main.Val ->
+                 Main.$fShowVal_$cshowsPrec
+                   GHC.Show.shows18
+                   x10
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $fShowVal_$cshowList :: [Main.Val] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Main.Val Main.$fShowVal1) -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $fShowVal_$cshowsPrec ::
+    GHC.Types.Int -> Main.Val -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,1*U(U)><S,1*U><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int w1 :: Main.Val w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Main.$w$cshowsPrec1 ww1 w1 w2 }) -}
+c6e78e19fed964544fc92a99e3c2c2c9
+  $s$fStream[]mtok ::
+    Text.Parsec.Prim.Stream [tok] Data.Functor.Identity.Identity tok
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ tok.
+                  @ [tok]
+                  @ Data.Functor.Identity.Identity
+                  @ tok
+                  Data.Functor.Identity.$fMonadIdentity
+                  (Main.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons @ tok) -}
+bb151638a81a27692cb4d18d4b5f6264
+  $s$fStream[]mtok_$s$fStream[]mtok_$cuncons ::
+    [tok]
+    -> Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok]))
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ tok ds :: [tok] ->
+                 case ds of wild {
+                   []
+                   -> GHC.Base.$
+                        @ (GHC.Base.Maybe (tok, [tok]))
+                        @ (Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok])))
+                        (Data.Functor.Identity.$fApplicativeIdentity_$cpure
+                           @ (GHC.Base.Maybe (tok, [tok])))
+                        (GHC.Base.Nothing @ (tok, [tok]))
+                   : t ts
+                   -> GHC.Base.$
+                        @ (GHC.Base.Maybe (tok, [tok]))
+                        @ (Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok])))
+                        (Data.Functor.Identity.$fApplicativeIdentity_$cpure
+                           @ (GHC.Base.Maybe (tok, [tok])))
+                        (GHC.Base.Just @ (tok, [tok]) (t, ts)) }) -}
+ca0b3e72dc7b41f23e5ae58d6802e224
+  $w$cshowsPrec ::
+    GHC.Prim.Int# -> Main.Exp -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,U>, Inline: [0] -}
+5111bfd2394b3a7eb3f23dee96d3003b
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int# -> Main.Val -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   w :: Main.Val
+                   w1 :: GHC.Base.String ->
+                 case w of wild {
+                   Main.IntVal b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Main.$fShowVal4
+                             (case GHC.Show.$w$cshowsPrec1 11 b1 w1 of ww2 { (#,#) ww3 ww4 ->
+                              GHC.Types.: @ GHC.Types.Char ww3 ww4 })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Main.$fShowVal4
+                                (case GHC.Show.$w$cshowsPrec1
+                                        11
+                                        b1
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.shows8
+                                           w1) of ww2 { (#,#) ww3 ww4 ->
+                                 GHC.Types.: @ GHC.Types.Char ww3 ww4 })) }
+                   Main.BoolVal b1
+                   -> let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                        = \ x10 :: GHC.Base.String[OneShot] ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            Main.$fShowVal3
+                            (case b1 of wild1 {
+                               GHC.Types.False
+                               -> GHC.Base.++ @ GHC.Types.Char GHC.Show.shows17 x10
+                               GHC.Types.True
+                               -> GHC.Base.++ @ GHC.Types.Char GHC.Show.shows16 x10 })
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False -> p w1
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w1)) }
+                   Main.ExnVal b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Main.$fShowVal2
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.shows6
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w1)))
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Main.$fShowVal2
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.shows6
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.shows6
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.shows8
+                                            w1))))) } }) -}
+cb34958b986f27e07ee0e740f2eafcb7
+  type Env = [(GHC.Base.String, Main.Val)]
+ca0b3e72dc7b41f23e5ae58d6802e224
+  data Exp
+    = IntExp GHC.Integer.Type.Integer
+    | IntOpExp GHC.Base.String Main.Exp Main.Exp
+    | CompOpExp GHC.Base.String Main.Exp Main.Exp
+    | VarExp GHC.Base.String
+5111bfd2394b3a7eb3f23dee96d3003b
+  data Val
+    = IntVal GHC.Integer.Type.Integer
+    | BoolVal GHC.Types.Bool
+    | ExnVal GHC.Base.String
+d1232a7cb78be3c3a1aa021143dd3516
+  addOp ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      u
+      Data.Functor.Identity.Identity
+      (Main.Exp -> Main.Exp -> Main.Exp)
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.addOp1
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp -> Main.Exp -> Main.Exp>_R)) -}
+cf18581ebc33d577f1a792e271b5958a
+  addOp1 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> ((Main.Exp -> Main.Exp -> Main.Exp)
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> ((Main.Exp -> Main.Exp -> Main.Exp)
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+0e530b0f2bc637715d20efc203af7fb1
+  arith ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String u Data.Functor.Identity.Identity Main.Exp
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.arith1
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp>_R)) -}
+36f19c5d6466817ffaa9b478b10c46c7
+  arith1 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ u
+                   @ b
+                   eta2 :: Text.Parsec.Prim.State GHC.Base.String u
+                   eta3 :: Main.Exp
+                           -> Text.Parsec.Prim.State GHC.Base.String u
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta5 :: Main.Exp
+                           -> Text.Parsec.Prim.State GHC.Base.String u
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta6 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Combinator.chainl3
+                   @ GHC.Base.String
+                   @ u
+                   @ Data.Functor.Identity.Identity
+                   @ Main.Exp
+                   (Main.arith2 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Main.Exp>_R))
+                   (Main.addOp1 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Main.Exp -> Main.Exp -> Main.Exp>_R))
+                   @ b
+                   eta2
+                   eta3
+                   eta4
+                   eta5
+                   eta6) -}
+c17a9cff2a14e9dc1b872721ff892c42
+  arith2 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ u
+                   @ b
+                   eta2 :: Text.Parsec.Prim.State GHC.Base.String u
+                   eta3 :: Main.Exp
+                           -> Text.Parsec.Prim.State GHC.Base.String u
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta5 :: Main.Exp
+                           -> Text.Parsec.Prim.State GHC.Base.String u
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta6 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Combinator.chainl3
+                   @ GHC.Base.String
+                   @ u
+                   @ Data.Functor.Identity.Identity
+                   @ Main.Exp
+                   (Main.arith4 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Main.Exp>_R))
+                   (Main.arith3 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Main.Exp -> Main.Exp -> Main.Exp>_R))
+                   @ b
+                   eta2
+                   eta3
+                   eta4
+                   eta5
+                   eta6) -}
+0713f3c89e7543add84bc845493c6ca3
+  arith3 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> ((Main.Exp -> Main.Exp -> Main.Exp)
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> ((Main.Exp -> Main.Exp -> Main.Exp)
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+cf60d368007d139f8ee47225de310e21
+  arith4 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: (\ @ u
+                   @ b
+                   s1 :: Text.Parsec.Prim.State GHC.Base.String u
+                   cok :: Main.Exp
+                          -> Text.Parsec.Prim.State GHC.Base.String u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eok :: Main.Exp
+                          -> Text.Parsec.Prim.State GHC.Base.String u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 Main.arith6
+                   @ u
+                   @ b
+                   s1
+                   cok
+                   cerr
+                   eok
+                   (\ err :: Text.Parsec.Error.ParseError ->
+                    Main.arith5
+                      @ u
+                      @ b
+                      s1
+                      cok
+                      cerr
+                      (\ y :: Main.Exp
+                         s' :: Text.Parsec.Prim.State GHC.Base.String u[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eok y s' (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eerr (Text.Parsec.Error.mergeError err err')))) -}
+5361e8d49f182b22ce48b357c9340c43
+  arith5 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+c59197d740233a6d6be3022274ea46ea
+  arith6 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: (\ @ u
+                   @ b1
+                   eta :: Text.Parsec.Prim.State GHC.Base.String u
+                   eta1 :: Main.Exp
+                           -> Text.Parsec.Prim.State GHC.Base.String u
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: Main.Exp
+                           -> Text.Parsec.Prim.State GHC.Base.String u
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Main.arith7
+                   @ u
+                   @ b1
+                   eta
+                   (\ x10 :: GHC.Integer.Type.Integer
+                      s2 :: Text.Parsec.Prim.State GHC.Base.String u[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    eta1
+                      (Main.IntExp x10)
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta2
+                   (\ x10 :: GHC.Integer.Type.Integer
+                      s2 :: Text.Parsec.Prim.State GHC.Base.String u[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    eta3
+                      (Main.IntExp x10)
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta4) -}
+be810bca1db67b0dff609d89e4d0e813
+  arith7 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> (GHC.Integer.Type.Integer
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (GHC.Integer.Type.Integer
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+10f296d22358e47bfc96babb93d21b9d
+  atom ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String u Data.Functor.Identity.Identity Main.Exp
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.arith4
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp>_R)) -}
+c7334b327bd39d41cc4156cd1938bc62
+  compOp ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      u
+      Data.Functor.Identity.Identity
+      (Main.Exp -> Main.Exp -> Main.Exp)
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.compOp1
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp -> Main.Exp -> Main.Exp>_R)) -}
+c762cdc90befaf190d313a5336269e8d
+  compOp1 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> ((Main.Exp -> Main.Exp -> Main.Exp)
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> ((Main.Exp -> Main.Exp -> Main.Exp)
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+12e81bfa4b8d2bd2f2a65be2b5d3cf16
+  compOps ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+                   Main.compOps16
+                   Main.compOps1) -}
+9486884d5dc7b00589c1ed1e62c6b382
+  compOps1 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+                   Main.compOps14
+                   Main.compOps2) -}
+ea2d389b2722e098d5c9e648dfe92d5c
+  compOps10 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+  {- Strictness: m,
+     Unfolding: ((Main.compOps11, GHC.Integer.Type.leInteger)) -}
+7b07ae14a8f2d0f532e3c901bba9c42c
+  compOps11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<="#) -}
+0c9743116aa3f96c51bc31810c13fa99
+  compOps12 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+  {- Strictness: m,
+     Unfolding: ((Main.compOps13, GHC.Integer.Type.eqInteger)) -}
+beb80e9529fe0e0cc4f3bf2f468ecdc6
+  compOps13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "=="#) -}
+2ca066ee943a225d00d2e8bceb3b54c6
+  compOps14 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+  {- Strictness: m,
+     Unfolding: ((Main.compOps15, GHC.Integer.Type.gtInteger)) -}
+0e942dff7bcf4d0e7b52d55bb76206c0
+  compOps15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ">"#) -}
+873082fa7b6d2303ae8b72b740aa7af5
+  compOps16 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+  {- Strictness: m,
+     Unfolding: ((Main.compOps17, GHC.Integer.Type.ltInteger)) -}
+072f97a8f1f37f10414cb7f027d162dc
+  compOps17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<"#) -}
+ccf19f10b975313278cd6c5bd8a7a5ad
+  compOps2 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+                   Main.compOps12
+                   Main.compOps3) -}
+35aecfedd7e4711edc90b6e887a3b3f1
+  compOps3 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+                   Main.compOps10
+                   Main.compOps4) -}
+b3626b5ef7919273f6335c67bd51edc3
+  compOps4 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+                   Main.compOps8
+                   Main.compOps5) -}
+2fd4d131162289033bd4619ed1ea3b47
+  compOps5 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+                   Main.compOps6
+                   (GHC.Types.[]
+                      @ ([GHC.Types.Char],
+                         GHC.Integer.Type.Integer
+                         -> GHC.Integer.Type.Integer -> GHC.Types.Bool))) -}
+1678a15ddd3daca8bff9e08429bc39e5
+  compOps6 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+  {- Strictness: m,
+     Unfolding: ((Main.compOps7, GHC.Integer.Type.neqInteger)) -}
+4f154d8e651dd4a9d89f2c53f4fbbba1
+  compOps7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "/="#) -}
+8f8c1be7e9f12a88ce009734af02b21d
+  compOps8 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+  {- Strictness: m,
+     Unfolding: ((Main.compOps9, GHC.Integer.Type.geInteger)) -}
+78b4323a4c7596117db1c20074d8f840
+  compOps9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ">="#) -}
+ff7ae220dafcb75eacca1c5d133ef963
+  eval :: Main.Exp -> Main.Env -> Main.Val
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+76afa64a79caf4efa46e8b8f34cfb694
+  expr ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String u Data.Functor.Identity.Identity Main.Exp
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.expr1
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp>_R)) -}
+0fd50ab26395a7973dd65303e19fe5b5
+  expr1 ::
+    Text.Parsec.Prim.State GHC.Base.String u
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Main.Exp
+        -> Text.Parsec.Prim.State GHC.Base.String u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ u
+                   @ b
+                   eta2 :: Text.Parsec.Prim.State GHC.Base.String u
+                   eta3 :: Main.Exp
+                           -> Text.Parsec.Prim.State GHC.Base.String u
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta5 :: Main.Exp
+                           -> Text.Parsec.Prim.State GHC.Base.String u
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta6 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Combinator.chainl3
+                   @ GHC.Base.String
+                   @ u
+                   @ Data.Functor.Identity.Identity
+                   @ Main.Exp
+                   (Main.arith1 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Main.Exp>_R))
+                   (Main.compOp1 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Main.Exp -> Main.Exp -> Main.Exp>_R))
+                   @ b
+                   eta2
+                   eta3
+                   eta4
+                   eta5
+                   eta6) -}
+30872d4868b621cf94f9455665c9b715
+  factor ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String u Data.Functor.Identity.Identity Main.Exp
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.arith4
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp>_R)) -}
+2a44e194ca2a1ddec329d1bb0b622284
+  getInt :: Main.Val -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Val ->
+                 case ds of wild { DEFAULT -> Main.getInt1 Main.IntVal i -> i }) -}
+536544842acbaf13d6d25a024f2e2808
+  getInt1 :: GHC.Integer.Type.Integer
+  {- Strictness: b -}
+2f8f4b87d172b53e1e71f2f39ba35cf7
+  int ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      u
+      Data.Functor.Identity.Identity
+      GHC.Integer.Type.Integer
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.arith7
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <GHC.Integer.Type.Integer>_R)) -}
+c9ae4c66a12c1bfd99f5cba173430476
+  intExp ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String u Data.Functor.Identity.Identity Main.Exp
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.arith6
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp>_R)) -}
+26701919d5bb867388e472d3d053fff0
+  intOps ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                   Main.intOps13
+                   Main.intOps1) -}
+5d807e6336b4fde9c2424741d0c5b7cd
+  intOps1 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                   Main.intOps11
+                   Main.intOps2) -}
+76f45a8fbfe3e5ad315b6318c1b07033
+  intOps10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "*"#) -}
+e130b996096c35cbb00a3522dbfc4557
+  intOps11 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+  {- Strictness: m,
+     Unfolding: ((Main.intOps12, GHC.Integer.Type.minusInteger)) -}
+1ab31d1c96375d905f9f57d03c8703af
+  intOps12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-"#) -}
+d7d0cabc4a8f6d35575eebe039aeaad0
+  intOps13 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+  {- Strictness: m,
+     Unfolding: ((Main.intOps14, GHC.Integer.Type.plusInteger)) -}
+eb9dd43a18d75e8488868327a0651b78
+  intOps14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+"#) -}
+f1369a145a7547c7cd63f408e1e50509
+  intOps2 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                   Main.intOps9
+                   Main.intOps3) -}
+ac66b3a0e4c0a46621595d262b3a18dd
+  intOps3 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                   Main.intOps7
+                   Main.intOps4) -}
+ad9a18d2e33831dd7473b4fe7cd879a2
+  intOps4 ::
+    [([GHC.Types.Char],
+      GHC.Integer.Type.Integer
+      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char],
+                      GHC.Integer.Type.Integer
+                      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                   Main.intOps5
+                   (GHC.Types.[]
+                      @ ([GHC.Types.Char],
+                         GHC.Integer.Type.Integer
+                         -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer))) -}
+0d491aa96c1c527a1fb4c60e4840e057
+  intOps5 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+  {- Strictness: m,
+     Unfolding: ((Main.intOps6, GHC.Integer.Type.$fOrdInteger_$cmax)) -}
+b2bdb17d3c64c52e1ea06a93409dda64
+  intOps6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "max"#) -}
+9408db1774528b94bbe85dede43baa69
+  intOps7 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+  {- Strictness: m,
+     Unfolding: ((Main.intOps8, GHC.Real.$fIntegralInteger_$cdiv)) -}
+b0ff658db8de656d07292f8f3b5c2761
+  intOps8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "/"#) -}
+edd353a31e5c84f34833bb97587f1aad
+  intOps9 ::
+    ([GHC.Types.Char],
+     GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+  {- Strictness: m,
+     Unfolding: ((Main.intOps10, GHC.Integer.Type.timesInteger)) -}
+54c4e7e16dc356db331d628fc7bed6e0
+  liftCompOp ::
+    (GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Types.Bool)
+    -> Main.Val -> Main.Val -> Main.Val
+  {- Arity: 3, Strictness: <L,1*C1(C1(U))><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ f :: GHC.Integer.Type.Integer
+                        -> GHC.Integer.Type.Integer -> GHC.Types.Bool
+                   ds :: Main.Val
+                   ds1 :: Main.Val ->
+                 case ds of wild {
+                   DEFAULT -> Main.liftCompOp1
+                   Main.IntVal i1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> Main.liftCompOp1
+                        Main.IntVal i2 -> Main.BoolVal (f i1 i2) } }) -}
+9f734f617ef7abe0244affe3013be9c0
+  liftCompOp1 :: Main.Val
+  {- Unfolding: (Main.ExnVal Main.liftCompOp2) -}
+1765a5d2af46ee656f0de35239c3d9da
+  liftCompOp2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Invalid type given to argument"#) -}
+bcc098f44d0d2a3b73458717f63bce22
+  liftIntOp ::
+    (GHC.Integer.Type.Integer
+     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+    -> Main.Val -> Main.Val -> Main.Val
+  {- Arity: 3, Strictness: <L,1*C1(C1(U))><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ f :: GHC.Integer.Type.Integer
+                        -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+                   ds :: Main.Val
+                   ds1 :: Main.Val ->
+                 case ds of wild {
+                   DEFAULT -> Main.liftCompOp1
+                   Main.IntVal i1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> Main.liftCompOp1
+                        Main.IntVal i2 -> Main.IntVal (f i1 i2) } }) -}
+29c77717243bea325eb3a6221a318caa
+  main :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+011e41a3b12b135bbf3e24f8ff8f6f4d
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Main.main2
+                   (GHC.Types.[] @ (GHC.Base.String, Main.Val))) -}
+67376440a3f11efc45cba2f18db14f6d
+  main2 ::
+    Main.Env
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U> -}
+020d9cc2fa1fedde50cc474939f17d48
+  mulOp ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      u
+      Data.Functor.Identity.Identity
+      (Main.Exp -> Main.Exp -> Main.Exp)
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.arith3
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp -> Main.Exp -> Main.Exp>_R)) -}
+25822adc276636076953b43d0b0bfcb9
+  repl :: Main.Env -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main2
+                  `cast`
+                (<Main.Env>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+432e3e0fb0a9142ee5a0ad3a8bb9d214
+  symbol ::
+    Text.Parsec.Prim.Stream s m GHC.Types.Char =>
+    GHC.Base.String -> Text.Parsec.Prim.ParsecT s u m GHC.Base.String
+  {- Arity: 7,
+     Strictness: <L,U(U(U,U,U,U,U),C(U))><S,U><L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.symbol2
+                  `cast`
+                (forall s u (m :: * -> *).
+                 <Text.Parsec.Prim.Stream s m GHC.Types.Char>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                               <s>_R <u>_R <m>_R <GHC.Base.String>_R)) -}
+5918fa86d7a6526b1b11a9f70f1d3c84
+  symbol1 ::
+    GHC.Base.String
+    -> forall b.
+       Text.Parsec.Prim.State GHC.Base.String u
+       -> (GHC.Base.String
+           -> Text.Parsec.Prim.State GHC.Base.String u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (GHC.Base.String
+           -> Text.Parsec.Prim.State GHC.Base.String u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <S,U><L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+0d2163cf681cc2b5c278ece5ad3cd5d6
+  symbol2 ::
+    Text.Parsec.Prim.Stream s m GHC.Types.Char =>
+    GHC.Base.String
+    -> forall b.
+       Text.Parsec.Prim.State s u
+       -> (GHC.Base.String
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b)
+       -> (Text.Parsec.Error.ParseError -> m b)
+       -> (GHC.Base.String
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b)
+       -> (Text.Parsec.Error.ParseError -> m b)
+       -> m b
+  {- Arity: 7,
+     Strictness: <L,U(U(U,U,U,U,U),C(U))><S,U><L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+2f03b7631c50dc26a4fc560e2ac64df4
+  term ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String u Data.Functor.Identity.Identity Main.Exp
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.arith2
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp>_R)) -}
+607e3194af886bc18c3c45125e3d6b99
+  varExp ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String u Data.Functor.Identity.Identity Main.Exp
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.arith5
+                  `cast`
+                (forall u.
+                 Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Main.Exp>_R)) -}
+instance GHC.Classes.Eq [Main.Exp] = Main.$fEqExp
+instance GHC.Classes.Eq [Main.Val] = Main.$fEqVal
+instance GHC.Show.Show [Main.Exp] = Main.$fShowExp
+instance GHC.Show.Show [Main.Val] = Main.$fShowVal
+"SPEC/Main $fStream[]mtok _ @ Identity" [ALWAYS] forall @ tok
+                                                        $dMonad :: GHC.Base.Monad
+                                                                     Data.Functor.Identity.Identity
+  Text.Parsec.Prim.$fStream[]mtok @ tok
+                                  @ Data.Functor.Identity.Identity
+                                  $dMonad
+  = Main.$s$fStream[]mtok @ tok
+"SPEC/Main $fStream[]mtok_$cuncons _ @ Identity" [ALWAYS] forall @ tok
+                                                                 $dMonad :: GHC.Base.Monad
+                                                                              Data.Functor.Identity.Identity
+  Text.Parsec.Prim.$fStream[]mtok_$cuncons @ tok
+                                           @ Data.Functor.Identity.Identity
+                                           $dMonad
+  = Main.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons @ tok
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

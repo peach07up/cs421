@@ -1,0 +1,53 @@
+name:                interpOne
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            https://github.com/githubuser/interpOne#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2016 Author name here
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+--  hs-source-dirs:      src
+--  exposed-modules:     Lib
+--  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+
+executable interpOne-exe
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , interpOne
+                     , parsec
+  default-language:    Haskell2010
+
+test-suite interpOne-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test , app
+  other-modules:       Main
+  main-is:             Spec.hs
+  build-depends:       base
+                     , parsec
+  ghc-options:         -rtsopts -main-is Spec.main
+  default-language:    Haskell2010
+
+-- test-suite test type:               exitcode-stdio-1.0
+--     other-modules:      Main
+--     hs-source-dirs:     test , app
+--     main-is:            Spec.hs
+--     ghc-options:        -threaded -rtsopts -with-rtsopts=-N -main-is Spec.main
+--     build-depends:      base
+--     default-language:   Haskell2010
+
+
+
+source-repository head
+  type:     git
+  location: https://github.com/githubuser/interpOne

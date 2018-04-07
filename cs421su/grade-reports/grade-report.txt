@@ -1,0 +1,58 @@
+Grade Report for Peiwen Liu
+Produced 2016-08-10 09:45
+Netid: pliu15 uin: 653899724
+Course: cs421 (2016-06)  Section: P3  CRN: 30792
+
+                         Assignment   Status Raw Max    Norm Weight  Points 
+----------------------------------- -------- --- --- ------- ------ ------- 
+      Quiz 1 - Algebraic Data Types   Graded   0  10   0.00% 0.0243  0.0000 
+                Quiz 1 - Using HOFs   Graded  10  10 100.00% 0.0243  2.4299 
+              Quiz 1 - Writing HOFs   Graded  10  10 100.00% 0.0243  2.4299 
+                 Quiz 1 - Recursion Replaced      10  70.00% 0.0243  1.7009 
+            Quiz 1 - Tail Recursion   Graded   0  10   0.00% 0.0243  0.0000 
+           Quiz 2 - Lambda Calculus   Graded   1   3  33.33% 0.0405  1.3499 
+        Quiz 2 - Big Step Semantics   Graded   2   2 100.00% 0.0405  4.0498 
+Quiz 2 - Continuation Passing Style   Graded   0  10   0.00% 0.0405  0.0000 
+         Quiz 3 - Regular Languages   Graded   1   1 100.00% 0.0304  3.0374 
+     Quiz 3 - First and Follow Sets   Graded   0   3   0.00% 0.0304  0.0000 
+               Quiz 3 - LL Grammars   Graded   0   1   0.00% 0.0304  0.0000 
+               Quiz 3 - LR Grammars   Graded   1   2  50.00% 0.0304  1.5187 
+               Quiz 4 - Hoare Logic   Graded 200 200 100.00% 0.0304  3.0374 
+                 Quiz 4 - Monotypes Replaced      10  60.00% 0.0304  1.8224 
+      Quiz 4 - Small Step Semantics Replaced     200  37.50% 0.0304  1.1390 
+               Quiz 4 - Unification   Graded 100 100 100.00% 0.0304  3.0374 
+                  Final - Recursion   Graded   7  10  70.00% 0.0224  1.5701 
+                    Final - HOF Use   Graded   5  10  50.00% 0.0224  1.1215 
+       Final - Algebraic Data Types   Graded   0  10   0.00% 0.0224  0.0000 
+            Final - Lambda Calculus   Graded   0 200   0.00% 0.0224  0.0000 
+         Final - Big Step Semantics   Graded 200 200 100.00% 0.0224  2.2430 
+                        Final - CPS   Graded   0  10   0.00% 0.0224  0.0000 
+                Final - LR Grammars   Graded   0 400   0.00% 0.0449  0.0000 
+                Final - LL Grammars   Graded   0 100   0.00% 0.0224  0.0000 
+                Final - Unification   Graded   0 100   0.00% 0.0224  0.0000 
+       Final - Small Step Semantics   Graded  75 200  37.50% 0.0224  0.8411 
+                Final - Hoare Logic   Graded 200 200 100.00% 0.0224  2.2430 
+         Final - Monotype Semantics   Graded   6  10  60.00% 0.0224  1.3458 
+                 Final - Parameters   Graded 111 200  55.50% 0.0224  1.2449 
+                     Final - Prolog  Pending      10                        
+              ML 1 -- Basic Haskell   Graded  23  25  92.00% 0.0250  2.3000 
+                ML 2 -- Interpreter   Graded  20  20 100.00% 0.0250  2.5000 
+                      ML 3 -- Forth   Graded  65 100  65.00% 0.0250  1.6250 
+             ML 4 -- CPS Transforms   Graded 100 100 100.00% 0.0250  2.5000 
+              ML 5 -- Scheme Parser   Graded   0 100   0.00% 0.0250  0.0000 
+         ML 6 -- Scheme Interpreter   Graded   0 100   0.00% 0.0250  0.0000 
+              Pre Course Assessment   Graded 100 100 100.00% 0.0038  0.3846 
+                 Recursion Activity   Graded   1   1 100.00% 0.0038  0.3846 
+     Higher Order Function Activity   Graded 100 100 100.00% 0.0038  0.3846 
+                               MP 0   Graded 100 100 100.00% 0.0038  0.3846 
+                  Big Step Activity   Graded 100 100 100.00% 0.0038  0.3846 
+                       CPS Activity   Graded 100 100 100.00% 0.0038  0.3846 
+                Type Class Activity   Graded 100 100 100.00% 0.0038  0.3846 
+                     Monad Activity   Graded  80 100  80.00% 0.0038  0.3077 
+                   Grammar Activity   Graded 100 100 100.00% 0.0038  0.3846 
+                        LL Activity   Graded 100 100 100.00% 0.0038  0.3846 
+               LR Conflict Activity   Graded 100 100 100.00% 0.0038  0.3846 
+                  Monotype Activity   Graded 100 100 100.00% 0.0038  0.3846 
+                  Variable Activity   Graded  25 100  25.00% 0.0038  0.0962 
+----------------------------------- -------- --- --- ------- ------ ------- 
+                              Total                   49.72% 1.0000 49.7218 
